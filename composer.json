@@ -1,7 +1,7 @@
 {
     "name": "brandymedia/turbine-ui-core",
     "description": "Tailwind CSS styled Laravel Blade components",
-    "license": "",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Brandymedia\\TurbineUiCore\\": "src/"
