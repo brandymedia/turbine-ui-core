@@ -1,0 +1,135 @@
+<?php
+
+return [
+    
+    'meta' => [
+        'name' => '{{ name }}',
+        'description' => '{{ description }}',
+    ],
+
+    'design' => [
+
+        'variants' => [
+
+            'default' => [
+                'background' => 'bg-white dark:bg-slate-900',
+                'text' => 'text-slate-800 dark:text-slate-200',
+                'border' => 'border-slate-300 dark:border-slate-700',
+                'shadow' => 'shadow-slate-300/50 dark:shadow-slate-900/50',
+                'ring' => 'ring-slate-200 dark:ring-slate-700 ring-offset-slate-100 dark:ring-offset-slate-800',
+                'hover' => 'hover:bg-slate-300 hover:dark:bg-slate-900 hover:from-slate-400 hover:to-slate-700',
+                'focus' => 'focus-within:border-slate-600 dark:focus-within:border-slate-400 focus-within:border-2',
+                'active' => 'bg-slate-300 dark:bg-slate-900 from-slate-400 to-slate-700',
+                'gradient' => 'bg-gradient-to-br from-slate-200 to-slate-100 text-slate-800',
+                'divide' => 'divide-slate-300 dark:divide-slate-700',
+            ],
+
+        ],
+
+        'components' => [
+
+            'alert' => [
+
+                'base' => '',
+                
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+
+                'attributes' => [
+                    'accent' => '',
+                    'border' => '',
+                    'ring' => '',
+                    'rounded' => '',
+                    'shadow' => '',
+                ],
+
+            ],
+
+            'avatar' => [
+
+                'base' => '',
+                
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+
+                'attributes' => [
+                    'accent' => '',
+                    'border' => '',
+                    'ring' => '',
+                    'rounded' => '',
+                    'shadow' => '',
+                ],
+
+            ],
+
+            'badge' => [
+
+                'base' => '',
+                
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+
+                'attributes' => [
+                    'accent' => '',
+                    'border' => '',
+                    'ring' => '',
+                    'rounded' => '',
+                    'shadow' => '',
+                ],
+
+            ],
+
+            'burger' => [
+
+                'base' => '',
+            
+            ],
+
+            'button' => [
+
+                'base' => '',
+                
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+
+                'attributes' => [
+                    'accent' => '',
+                    'border' => '',
+                    'ring' => '',
+                    'rounded' => '',
+                    'shadow' => '',
+                ],
+
+                'options' => [
+                    'gradient' => false,
+                    'hover' => true,
+                    'safe' => ''
+                ],
+
+            ],
+
+        ], 
+
+    ],
+
+];

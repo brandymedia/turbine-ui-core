@@ -1,0 +1,27 @@
+{
+    "name": "brandymedia/turbine-ui-core",
+    "description": "Tailwind CSS styled Laravel Blade components",
+    "license": "",
+    "autoload": {
+        "psr-4": {
+            "Brandymedia\\TurbineUiCore\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andy Griffiths"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Brandymedia\\TurbineUiCore\\TurbineUiCoreServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.1.0",
+        "gehrisandro/tailwind-merge-laravel": "^1.0",
+        "laravel/prompts": "^0.1"
+    }
+}

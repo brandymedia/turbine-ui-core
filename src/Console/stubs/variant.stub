@@ -1,0 +1,16 @@
+<?php
+
+return [
+    '{{ name }}' => [
+        'background' => '',
+        'text' => '',
+        'border' => '',
+        'shadow' => '',
+        'ring' => '',
+        'hover' => '',
+        'focus' => '',
+        'active' => '',
+        'gradient' => '',
+        'divide' => '',
+    ]
+];
