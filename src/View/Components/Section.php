@@ -10,6 +10,7 @@ class Section extends Component
     public function __construct(
         private Turbine $turbine,
         public ?string $classes = null,
+        public ?string $full = null,
         public ?string $gradient = null,
         public ?string $size = null,
         public ?string $theme = null,
@@ -19,6 +20,7 @@ class Section extends Component
             'section',
             $variant,
             [
+                'full' => $full,
                 'gradient' => $gradient,
                 'size' => $size,
             ],
