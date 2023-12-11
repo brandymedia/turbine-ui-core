@@ -4,6 +4,7 @@ namespace Brandymedia\TurbineUiCore\View\Components;
 
 use Illuminate\View\Component;
 use Brandymedia\TurbineUiCore\Turbine;
+use Illuminate\View\ComponentAttributeBag;
 
 class Input extends Component
 {

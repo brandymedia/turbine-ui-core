@@ -1,7 +1,31 @@
-@if($type === 'checkbox' || $type === 'range' || $type === 'color')
+@aware(['combine'])
+
+@php
+if ($combine) {
+    $classes = $classes . ' m-0 border-none rounded-none';
+}
+@endphp
+
+@if($type === 'range' || $type === 'color')
     <input {{ $attributes->twMerge(['class' => $classes]) }} type="{{ $type }}">
+@elseif($type === 'checkbox')
+    <div class="flex items-center gap-1">
+        <input {{ $attributes->twMerge(['class' => $classes.' inline-block mb-0']) }} type="{{ $type }}">
+        @if ($label)
+            <x-turbine-ui-label for="{{ $attributes['name'] }}" variant="{{ $variant }}" size="{{ $size }}" class="mb-0 inline">
+                {{ $label }}
+            </x-turbine-ui-label>
+        @endif
+    </div>
 @elseif($type === 'radio')
-    <input {{ $attributes->twMerge(['class' => $classes.' rounded-full']) }} type="{{ $type }}">
+    <div class="flex items-center gap-1">
+        <input {{ $attributes->twMerge(['class' => $classes.' rounded-full inline-block mb-0']) }} type="{{ $type }}">
+        @if ($label)
+            <x-turbine-ui-label for="{{ $attributes['id'] }}" variant="{{ $variant }}" size="{{ $size }}" class="mb-0 inline">
+                {{ $label }}
+            </x-turbine-ui-label>
+        @endif
+    </div>
 @elseif($type === 'hidden')
     <input {{ $attributes->merge() }} type="{{ $type }}">
 @elseif($type === 'file')

@@ -63,8 +63,9 @@ class Turbine
     {
         $attributes = collect($attributes);
         $attributes['type'] === 'checkbox' ? $isCheckbox = true : $isCheckbox = false;
+        $attributes['type'] === 'radio' ? $isRadio = true : $isRadio = false;
 
-        if ($isCheckbox) {
+        if ($isCheckbox || $isRadio) {
             $classes->forget('base');
             $classes->forget('size');
         }

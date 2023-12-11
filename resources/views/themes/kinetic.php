@@ -188,6 +188,9 @@ return [
 
             'burger' => [
                 'base' => 'turbine-ui-burger lg:hidden [&>.turbine-ui-bar]:h-1 [&>.turbine-ui-bar]:w-7 [&>.turbine-ui-bar]:my-1.5 [&>.turbine-ui-bar]:duration-300',
+                'options' => [
+                    'safe' => 'transform translate-y-1.5 -rotate-45 hidden transform -translate-y-1 rotate-45'
+                ],
             ],
 
             'button' => [
@@ -261,6 +264,21 @@ return [
                     'border' => 'border-2',
                     'ring' => [false, 'ring-2 ring-offset-2'],
                     'rounded' => 'rounded',
+                    'shadow' => [false, 'shadow-md'],
+                ],
+            ],
+
+            'combine' => [
+                // 'base' => 'flex [&_*]:mb-0 [&_*:first-child]:rounded-tr-none [&_*:first-child]:rounded-br-none [&_*:first-child]:border-r-0 [&>*:last-child]:rounded-tl-none [&>*:last-child]:rounded-bl-none [&>*:last-child]:border-l-0',
+                // 'base' => 'flex gap-0.5 [&_*]:m-0 [&_*]:rounded-none',
+                'base' => 'flex overflow-hidden',
+                'attributes' => [
+                    'accent' => [false, 'border-l-8'],
+                    'border' => 'border-2',
+                    'divide' => [false, 'divide-x-2'],
+                    'full' => [false, 'w-full'],
+                    'ring' => [false, 'ring-2 ring-offset-2'],
+                    'rounded' => 'rounded-lg',
                     'shadow' => [false, 'shadow-md'],
                 ],
             ],
@@ -422,7 +440,7 @@ return [
             ],
 
             'input' => [
-                'base' => 'flex [&>div>input.tui-input]:bg-white [&>div>input.tui-input]:dark:bg-slate-900 [&>div>input.tui-input]:w-full [&>div>input.tui-input]:border-0 [&>.tui-prefix]:flex [&>.tui-prefix]:items-center [&>.tui-suffix]:flex [&>.tui-suffix]:items-center overflow-hidden',
+                'base' => 'flex [&>div>input.tui-input]:bg-white [&>div>input.tui-input]:dark:bg-slate-900 [&>div>input.tui-input]:w-full [&>div>input.tui-input]:border-0 [&>.tui-prefix]:flex [&>.tui-prefix]:items-center [&>.tui-suffix]:flex [&>.tui-suffix]:items-center overflow-hidden focus-within:relative focus-within:z-10',
                 'sizes' => [
                     'xs' => 'text-xs [&>div>input.tui-input]:placeholder:text-xs [&>div>input.tui-input]:py-1 [&>.tui-prefix]:px-2 [&>.tui-suffix]:px-2 mb-3',
                     'sm' => 'text-sm [&>div>input.tui-input]:placeholder:text-sm [&>div>input.tui-input]:py-2 [&>.tui-prefix]:px-3 [&>.tui-suffix]:px-3 mb-4',

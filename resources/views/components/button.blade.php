@@ -1,3 +1,11 @@
+@aware(['combine'])
+
+@php
+if ($combine) {
+    $classes = $classes . ' m-0 border-none rounded-none';
+}
+@endphp
+
 @isset ($href)
     <a
         href="{{ $href }}"

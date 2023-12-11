@@ -12,6 +12,7 @@ use Brandymedia\TurbineUiCore\View\Components\Button;
 use Brandymedia\TurbineUiCore\View\Components\ButtonGroup;
 use Brandymedia\TurbineUiCore\View\Components\Card;
 use Brandymedia\TurbineUiCore\View\Components\Code;
+use Brandymedia\TurbineUiCore\View\Components\Combine;
 use Brandymedia\TurbineUiCore\View\Components\Container;
 use Brandymedia\TurbineUiCore\View\Components\Dropdown;
 use Brandymedia\TurbineUiCore\View\Components\Grid;
@@ -57,6 +58,7 @@ class TurbineUiCoreServiceProvider extends ServiceProvider
             ButtonGroup::class,
             Card::class,
             Code::class,
+            Combine::class,
             Container::class,
             Dropdown::class,
             Grid::class,
