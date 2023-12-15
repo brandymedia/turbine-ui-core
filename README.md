@@ -136,8 +136,4 @@ Then add the Turbine UI blade directive to your head:
 
 ### Components
 
-<<<<<<< HEAD
-You can view the documentation for each of the components [here](http://turbine-ui-website.test/components).
-=======
-You can view the documentation for each of the components [here](http://turbine-ui-website.test/components).
->>>>>>> 6fa2cd142bfa7e5168fc58fc70527a997f12f2fe
+You can view the documentation for each of the components [here](http://turbine-ui-website.test/components)

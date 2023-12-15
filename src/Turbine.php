@@ -64,10 +64,15 @@ class Turbine
         $attributes = collect($attributes);
         $attributes['type'] === 'checkbox' ? $isCheckbox = true : $isCheckbox = false;
         $attributes['type'] === 'radio' ? $isRadio = true : $isRadio = false;
+        $attributes['type'] === 'range' ? $isRange = true : $isRange = false;
 
         if ($isCheckbox || $isRadio) {
             $classes->forget('base');
             $classes->forget('size');
+        }
+
+        if ($isRange) {
+            $classes->forget('base');
         }
 
         return $classes;
@@ -364,6 +369,14 @@ class Turbine
                     $variantClasses->put('gradient', $this->theme['design']['variants'][$variantName]['gradient']);
                     $variantClasses->forget('text');
                 }
+            }
+        }
+
+        if (isset($localVariant['accent'])) {
+            $variantClasses->put('accent', $localVariant['accent']);
+        } else {
+            if (isset($this->theme['design']['variants'][$variantName]['accent'])) {
+                $variantClasses->put('accent', $this->theme['design']['variants'][$variantName]['accent']);
             }
         }
 

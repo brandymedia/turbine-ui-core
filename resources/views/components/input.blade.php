@@ -6,7 +6,9 @@ if ($combine) {
 }
 @endphp
 
-@if($type === 'range' || $type === 'color')
+@if($type === 'range')
+    <input {{ $attributes->twMerge(['class' => $classes. ' appearance-none cursor-pointer rounded-full']) }} type="{{ $type }}">
+@elseif($type === 'color')
     <input {{ $attributes->twMerge(['class' => $classes]) }} type="{{ $type }}">
 @elseif($type === 'checkbox')
     <div class="flex items-center gap-1">

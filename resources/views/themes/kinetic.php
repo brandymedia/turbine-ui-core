@@ -22,6 +22,7 @@ return [
                 'active' => 'bg-slate-300 dark:bg-slate-900 from-slate-400 to-slate-700',
                 'gradient' => 'bg-gradient-to-br from-slate-200 to-slate-100 text-slate-800',
                 'divide' => 'divide-slate-300 dark:divide-slate-700',
+                'accent' => 'accent-slate-600 hover:accent-slate-700',
             ],
             
             'dark' => [
@@ -35,6 +36,7 @@ return [
                 'active' => 'bg-slate-800 from-slate-400 to-slate-700',
                 'gradient' => 'bg-gradient-to-br from-slate-700 to-slate-400 text-slate-100',
                 'divide' => 'divide-slate-800',
+                'accent' => 'accent-slate-600 hover:accent-slate-700',
             ],
 
             'light' => [
@@ -48,6 +50,7 @@ return [
                 'active' => 'bg-slate-300 dark:bg-slate-800 from-slate-400 to-slate-700',
                 'gradient' => 'bg-gradient-to-br from-slate-700 to-slate-400 text-slate-100',
                 'divide' => 'divide-slate-200 dark:divide-slate-700',
+                'accent' => 'accent-slate-600 hover:accent-slate-700',
             ],
             
             'brand' => [
@@ -61,6 +64,7 @@ return [
                 'active' => 'bg-brand-300 dark:bg-brand-900 from-brand-400 to-brand-700',
                 'gradient' => 'bg-gradient-to-br from-brand-700 to-brand-400 text-brand-100',
                 'divide' => 'divide-brand-300 dark:divide-brand-900',
+                'accent' => 'accent-brand-600 hover:accent-brand-700',
             ],
             
             'primary' => [
@@ -74,6 +78,7 @@ return [
                 'active' => 'bg-cyan-300 dark:bg-cyan-900 from-cyan-400 to-cyan-700',
                 'gradient' => 'bg-gradient-to-br from-cyan-700 to-cyan-400 text-cyan-100',
                 'divide' => 'divide-cyan-300 dark:divide-cyan-900',
+                'accent' => 'accent-cyan-600 hover:accent-cyan-700',
             ],
             
             'secondary' => [
@@ -87,6 +92,7 @@ return [
                 'active' => 'bg-slate-300 dark:bg-slate-900 from-slate-400 to-slate-700',
                 'gradient' => 'bg-gradient-to-br from-slate-700 to-slate-400 text-slate-100',
                 'divide' => 'divide-slate-300 dark:divide-slate-900',
+                'accent' => 'accent-slate-600 hover:accent-slate-700',
             ],
         
             'success' => [
@@ -100,6 +106,7 @@ return [
                 'active' => 'bg-emerald-300 dark:bg-emerald-900 from-emerald-400 to-emerald-700',
                 'gradient' => 'bg-gradient-to-br from-emerald-700 to-emerald-400 text-emerald-100',
                 'divide' => 'divide-emerald-300 dark:divide-emerald-900',
+                'accent' => 'accent-emerald-600 hover:accent-emerald-700',
             ],
         
             'warning' => [
@@ -113,6 +120,7 @@ return [
                 'active' => 'bg-orange-300 dark:bg-orange-900 from-orange-400 to-orange-700',
                 'gradient' => 'bg-gradient-to-br from-orange-700 to-orange-400 text-orange-100',
                 'divide' => 'divide-orange-300 dark:divide-orange-900',
+                'accent' => 'accent-orange-600 hover:accent-orange-700',
             ],
         
             'danger' => [
@@ -126,6 +134,7 @@ return [
                 'active' => 'bg-red-300 dark:bg-red-900 from-red-400 to-red-700',
                 'gradient' => 'bg-gradient-to-br from-red-700 to-red-400 text-red-100',
                 'divide' => 'divide-red-300 dark:divide-red-900',
+                'accent' => 'accent-red-600 hover:accent-red-700',
             ],
         
         ],
