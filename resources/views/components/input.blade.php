@@ -7,9 +7,19 @@ if ($combine) {
 @endphp
 
 @if($type === 'range')
-    <input {{ $attributes->twMerge(['class' => $classes. ' appearance-none cursor-pointer rounded-full']) }} type="{{ $type }}">
+    <div class="flex-1">
+        @if ($label)
+            <x-turbine-ui-label for="{{ $attributes['name'] }}" variant="{{ $variant }}" size="{{ $size }}">{{ $label }}</x-turbine-ui-label>
+        @endif
+        <input {{ $attributes->twMerge(['class' => $classes. ' appearance-none cursor-pointer rounded-full']) }} type="{{ $type }}">
+    </div>
 @elseif($type === 'color')
-    <input {{ $attributes->twMerge(['class' => $classes]) }} type="{{ $type }}">
+    <div class="flex-1">
+        @if ($label)
+            <x-turbine-ui-label for="{{ $attributes['name'] }}" variant="{{ $variant }}" size="{{ $size }}">{{ $label }}</x-turbine-ui-label>
+        @endif
+        <input {{ $attributes->twMerge(['class' => $classes]) }} type="{{ $type }}">
+    </div>
 @elseif($type === 'checkbox')
     <div class="flex items-center gap-1">
         <input {{ $attributes->twMerge(['class' => $classes.' inline-block mb-0']) }} type="{{ $type }}">

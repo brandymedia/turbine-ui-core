@@ -461,6 +461,7 @@ return [
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
                     'border' => 'border-2',
+                    'full' => [false, 'w-full'],
                     'ring' => [false, 'ring-2 ring-offset-2'],
                     'rounded' => 'rounded',
                     'shadow' => [false, 'shadow-md'],
