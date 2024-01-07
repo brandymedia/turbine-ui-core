@@ -28,7 +28,7 @@ In the 'content' section, add **./vendor/brandymedia/turbine-ui-core/**/*.php** 
 
 ```
 content: [
-    '...'
+    '...',
     './vendor/brandymedia/turbine-ui-core/**/*.php',
 ],
 ```
