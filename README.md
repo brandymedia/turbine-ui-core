@@ -110,7 +110,7 @@ In the 'content' section, add **./resources/views/**/*.php** as a new line:
 
 ```
 content: [
-    '...'
+    '...',
     './resources/views/**/*.php',
 ],
 ```
