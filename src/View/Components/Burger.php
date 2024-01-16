@@ -12,7 +12,7 @@ class Burger extends Component
         public ?object $classes = null,
         public ?string $theme = null,
         public ?string $variant = null,
-
+        public ?string $barClasses = null,
     ) {
         $classes = $turbine->classBuilder(
             'burger',
@@ -24,6 +24,18 @@ class Burger extends Component
         );
 
         $this->classes = $classes;
+
+        $childrenClasses = $turbine->childrenClasses(
+            'burger',
+            [
+                'bar',
+            ],
+            null,
+        );
+
+        foreach ($childrenClasses as $key => $value) {
+            $this->$key = $value;
+        }
     }
 
     public function render()

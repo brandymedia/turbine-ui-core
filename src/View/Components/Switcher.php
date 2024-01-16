@@ -18,6 +18,8 @@ class Switcher extends Component
         public ?string $size = null,
         public ?string $theme = null,
         public ?string $variant = null,
+        public ?string $inputClasses = null,
+        public ?string $labelClasses = null,
     ) {
         $classes = $turbine->classBuilder(
             'switcher',
@@ -34,6 +36,19 @@ class Switcher extends Component
         );
 
         $this->classes = $classes;
+
+        $childrenClasses = $turbine->childrenClasses(
+            'switcher',
+            [
+                'input',
+                'label',
+            ],
+            $size,
+        );
+
+        foreach ($childrenClasses as $key => $value) {
+            $this->$key = $value;
+        }
     }
 
     public function render()

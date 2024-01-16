@@ -21,6 +21,9 @@ class Table extends Component
         public ?string $striped = null,
         public ?string $theme = null,
         public ?string $variant = null,
+        public ?string $tbodyClasses = null,
+        public ?string $tfootClasses = null,
+        public ?string $theadClasses = null,
     ) {
         $classes = $turbine->classBuilder(
             'table',
@@ -40,6 +43,20 @@ class Table extends Component
         );
 
         $this->classes = $classes;
+
+        $childrenClasses = $turbine->childrenClasses(
+            'table',
+            [
+                'tbody',
+                'tfoot',
+                'thead',
+            ],
+            $size,
+        );
+
+        foreach ($childrenClasses as $key => $value) {
+            $this->$key = $value;
+        }
     }
 
     public function render()

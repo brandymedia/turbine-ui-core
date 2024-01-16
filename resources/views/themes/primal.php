@@ -3,8 +3,8 @@
 return [
     
     'meta' => [
-        'name' => 'kinetic',
-        'description' => 'Turbine UI Kinetic theme',
+        'name' => 'primal',
+        'description' => 'Turbine UI Primal theme',
     ],
 
     'design' => [
@@ -12,131 +12,109 @@ return [
         'variants' => [
             
             'default' => [
-                'background' => 'bg-white dark:bg-slate-900',
-                'text' => 'text-slate-800 dark:text-slate-200',
-                'border' => 'border-slate-300 dark:border-slate-700',
-                'shadow' => 'shadow-slate-300/50 dark:shadow-slate-900/50',
+                'background' => 'bg-slate-50 dark:bg-slate-900',
+                'text' => 'text-slate-600 dark:text-slate-400',
+                'border' => 'border-slate-600 dark:border-slate-400',
+                'shadow' => 'shadow-slate-600/100 dark:shadow-slate-700/100',
                 'ring' => 'ring-slate-200 dark:ring-slate-700 ring-offset-slate-100 dark:ring-offset-slate-800',
-                'hover' => 'hover:bg-slate-300 hover:dark:bg-slate-900 hover:from-slate-400 hover:to-slate-700 hover:text-slate-800/70 hover:dark:text-slate-400/70',
-                'focus' => 'focus-within:outline focus-within:outline-slate-600 dark:focus-within:outline-slate-400 focus-within:outline-2',
-                'active' => 'bg-slate-300 dark:bg-slate-900 from-slate-400 to-slate-700',
-                'gradient' => 'bg-gradient-to-br from-slate-200 to-slate-100 text-slate-800',
-                'divide' => 'divide-slate-300 dark:divide-slate-700',
-                'accent' => 'accent-slate-600 hover:accent-slate-700',
+                'hover' => 'hover:bg-slate-100 hover:from-slate-200 hover:to-slate-400 hover:dark:bg-slate-800 hover:from:dark:bg-slate-400 dark:hover:to-slate-600',
+                'focus' => 'focus-within:border-slate-600 focus-within:border-8',
+                'active' => 'bg-slate-100 from-slate-200 to-slate-400 dark:bg-slate-800 from:dark:bg-slate-400 dark:to-slate-600',
+                'gradient' => 'bg-gradient-to-br from-slate-100 to-slate-300 text-slate-800 dark:from-slate-900 dark:to-slate-500 dark:text-slate-100',
+                'divide' => 'divide-slate-600 dark:divide-slate-400',
             ],
-            
+
             'dark' => [
                 'background' => 'bg-slate-900',
-                'text' => 'text-slate-300',
+                'text' => 'text-slate-400',
                 'border' => 'border-slate-700',
                 'shadow' => 'shadow-slate-900/10',
                 'ring' => 'ring-slate-700 ring-offset-slate-800',
                 'hover' => 'hover:bg-slate-800 hover:from-slate-400 hover:to-slate-700',
-                'focus' => 'focus-within:outline focus-within:outline-slate-900 focus-within:outline-2',
+                'focus' => 'focus-within:border-slate-900 focus-within:border-2',
                 'active' => 'bg-slate-800 from-slate-400 to-slate-700',
                 'gradient' => 'bg-gradient-to-br from-slate-700 to-slate-400 text-slate-100',
-                'divide' => 'divide-slate-800',
-                'accent' => 'accent-slate-600 hover:accent-slate-700',
+                'divide' => 'divide-slate-700',
             ],
 
-            'light' => [
-                'background' => 'bg-slate-50/80 dark:bg-slate-900',
-                'text' => 'text-slate-800 dark:text-slate-200',
-                'border' => 'border-slate-200 dark:border-slate-700',
-                'shadow' => 'shadow-slate-500/10 dark:shadow-slate-900/10',
-                'ring' => 'ring-slate-200 dark:ring-slate-700 ring-offset-slate-100 dark:ring-offset-slate-800',
-                'hover' => 'hover:bg-slate-300 hover:dark:bg-slate-800 hover:from-slate-400 hover:to-slate-700 hover:text-slate-800/70 hover:dark:text-slate-400/70',
-                'focus' => 'focus-within:outline focus-within:outline-slate-600 dark:focus-within:outline-slate-400 focus-within:outline-2',
-                'active' => 'bg-slate-300 dark:bg-slate-800 from-slate-400 to-slate-700',
-                'gradient' => 'bg-gradient-to-br from-slate-700 to-slate-400 text-slate-100',
-                'divide' => 'divide-slate-200 dark:divide-slate-700',
-                'accent' => 'accent-slate-600 hover:accent-slate-700',
-            ],
-            
             'brand' => [
-                'background' => 'bg-brand-200 dark:bg-brand-800',
-                'text' => 'text-brand-800 dark:text-brand-200',
-                'border' => 'border-brand-300 dark:border-brand-900',
-                'shadow' => 'shadow-brand-300/50 dark:shadow-brand-900/50',
+                'background' => 'bg-brand-50 dark:bg-brand-900',
+                'text' => 'text-brand-600 dark:text-brand-400',
+                'border' => 'border-brand-600 dark:border-brand-400',
+                'shadow' => 'shadow-brand-600/100 dark:shadow-brand-700/100',
                 'ring' => 'ring-brand-200 dark:ring-brand-700 ring-offset-brand-100 dark:ring-offset-brand-800',
-                'hover' => 'hover:bg-brand-300 hover:dark:bg-brand-900 hover:from-brand-400 hover:to-brand-700 hover:text-brand-800/70 hover:dark:text-brand-400/70',
-                'focus' => 'focus-within:outline focus-within:outline-brand-600 dark:focus-within:outline-brand-400 focus-within:outline-2',
-                'active' => 'bg-brand-300 dark:bg-brand-900 from-brand-400 to-brand-700',
-                'gradient' => 'bg-gradient-to-br from-brand-700 to-brand-400 text-brand-100',
-                'divide' => 'divide-brand-300 dark:divide-brand-900',
-                'accent' => 'accent-brand-600 hover:accent-brand-700',
+                'hover' => 'hover:bg-brand-100 hover:from-brand-200 hover:to-brand-400 hover:dark:bg-brand-800 hover:from:dark:bg-brand-400 dark:hover:to-brand-600',
+                'focus' => 'focus-within:border-brand-600 focus-within:border-8',
+                'active' => 'bg-brand-100 from-brand-200 to-brand-400 dark:bg-brand-800 from:dark:bg-brand-400 dark:to-brand-600',
+                'gradient' => 'bg-gradient-to-br from-brand-100 to-brand-300 text-brand-800 dark:from-brand-900 dark:to-brand-500 dark:text-brand-100',
+                'divide' => 'divide-brand-600 dark:divide-brand-400',
             ],
-            
+
             'primary' => [
-                'background' => 'bg-cyan-200 dark:bg-cyan-700',
-                'text' => 'text-cyan-800 dark:text-cyan-200',
-                'border' => 'border-cyan-300 dark:border-cyan-900',
-                'shadow' => 'shadow-cyan-300/50 dark:shadow-cyan-900/50',
+                'background' => 'bg-cyan-50 dark:bg-cyan-900',
+                'text' => 'text-cyan-600 dark:text-cyan-400',
+                'border' => 'border-cyan-600 dark:border-cyan-400',
+                'shadow' => 'shadow-cyan-600/100 dark:shadow-cyan-700/100',
                 'ring' => 'ring-cyan-200 dark:ring-cyan-700 ring-offset-cyan-100 dark:ring-offset-cyan-800',
-                'hover' => 'hover:bg-cyan-300 hover:dark:bg-cyan-900 hover:from-cyan-400 hover:to-cyan-700 hover:text-cyan-800/70 hover:dark:text-cyan-400/70',
-                'focus' => 'focus-within:outline focus-within:outline-cyan-600 dark:focus-within:outline-cyan-400 focus-within:outline-2',
-                'active' => 'bg-cyan-300 dark:bg-cyan-900 from-cyan-400 to-cyan-700',
-                'gradient' => 'bg-gradient-to-br from-cyan-700 to-cyan-400 text-cyan-100',
-                'divide' => 'divide-cyan-300 dark:divide-cyan-900',
-                'accent' => 'accent-cyan-600 hover:accent-cyan-700',
+                'hover' => 'hover:bg-cyan-100 hover:from-cyan-200 hover:to-cyan-400 hover:dark:bg-cyan-800 hover:from:dark:bg-cyan-400 dark:hover:to-cyan-600',
+                'focus' => 'focus-within:border-cyan-600 focus-within:border-8',
+                'active' => 'bg-cyan-100 from-cyan-200 to-cyan-400 dark:bg-cyan-800 from:dark:bg-cyan-400 dark:to-cyan-600',
+                'gradient' => 'bg-gradient-to-br from-cyan-100 to-cyan-300 text-cyan-800 dark:from-cyan-900 dark:to-cyan-500 dark:text-cyan-100',
+                'divide' => 'divide-cyan-600 dark:divide-cyan-400',
             ],
-            
+
             'secondary' => [
-                'background' => 'bg-slate-200 dark:bg-slate-700',
-                'text' => 'text-slate-800 dark:text-slate-200',
-                'border' => 'border-slate-300 dark:border-slate-900',
-                'shadow' => 'shadow-slate-300/50 dark:shadow-slate-900/50',
-                'ring' => 'ring-slate-200 dark:ring-slate-700 ring-offset-slate-100 dark:ring-offset-slate-800',
-                'hover' => 'hover:bg-slate-300 hover:dark:bg-slate-900 hover:from-slate-400 hover:to-slate-700 hover:text-slate-800/70 hover:dark:text-slate-400/70',
-                'focus' => 'focus-within:outline focus-within:outline-slate-600 dark:focus-within:outline-slate-400 focus-within:outline-2',
-                'active' => 'bg-slate-300 dark:bg-slate-900 from-slate-400 to-slate-700',
-                'gradient' => 'bg-gradient-to-br from-slate-700 to-slate-400 text-slate-100',
-                'divide' => 'divide-slate-300 dark:divide-slate-900',
-                'accent' => 'accent-slate-600 hover:accent-slate-700',
+                'background' => 'bg-slate-50 dark:bg-slate-900',
+                'text' => 'text-slate-400 dark:text-slate-600',
+                'border' => 'border-slate-400 dark:border-slate-600',
+                'shadow' => 'shadow-slate-400/100 dark:shadow-slate-700/100',
+                'ring' => 'ring-slate-100 dark:ring-slate-800 ring-offset-slate-50 dark:ring-offset-slate-900',
+                'hover' => 'hover:bg-slate-100 hover:from-slate-200 hover:to-slate-400 hover:dark:bg-slate-800 hover:from:dark:bg-slate-400 dark:hover:to-slate-600',
+                'focus' => 'focus-within:border-slate-400 focus-within:border-8',
+                'active' => 'bg-slate-100 from-slate-200 to-slate-400 dark:bg-slate-800 from:dark:bg-slate-400 dark:to-slate-600',
+                'gradient' => 'bg-gradient-to-br from-slate-50 to-slate-200 text-slate-700 dark:from-slate-800 dark:to-slate-400 dark:text-slate-200',
+                'divide' => 'divide-slate-400 dark:divide-slate-600',
             ],
-        
+
             'success' => [
-                'background' => 'bg-emerald-200 dark:bg-emerald-700',
-                'text' => 'text-emerald-800 dark:text-emerald-200',
-                'border' => 'border-emerald-300 dark:border-emerald-900',
-                'shadow' => 'shadow-emerald-300/50 dark:shadow-emerald-900/50',
+                'background' => 'bg-emerald-50 dark:bg-emerald-900',
+                'text' => 'text-emerald-600 dark:text-emerald-400',
+                'border' => 'border-emerald-600 dark:border-emerald-400',
+                'shadow' => 'shadow-emerald-600/100 dark:shadow-emerald-700/100',
                 'ring' => 'ring-emerald-200 dark:ring-emerald-700 ring-offset-emerald-100 dark:ring-offset-emerald-800',
-                'hover' => 'hover:bg-emerald-300 hover:dark:bg-emerald-900 hover:from-emerald-400 hover:to-emerald-700 hover:text-emerald-800/70 hover:dark:text-emerald-400/70',
-                'focus' => 'focus-within:outline focus-within:outline-emerald-600 dark:focus-within:outline-emerald-400 focus-within:outline-2',
-                'active' => 'bg-emerald-300 dark:bg-emerald-900 from-emerald-400 to-emerald-700',
-                'gradient' => 'bg-gradient-to-br from-emerald-700 to-emerald-400 text-emerald-100',
-                'divide' => 'divide-emerald-300 dark:divide-emerald-900',
-                'accent' => 'accent-emerald-600 hover:accent-emerald-700',
+                'hover' => 'hover:bg-emerald-100 hover:from-emerald-200 hover:to-emerald-400 hover:dark:bg-emerald-800 hover:from:dark:bg-emerald-400 dark:hover:to-emerald-600',
+                'focus' => 'focus-within:border-emerald-600 focus-within:border-8',
+                'active' => 'bg-emerald-100 from-emerald-200 to-emerald-400 dark:bg-emerald-800 from:dark:bg-emerald-400 dark:to-emerald-600',
+                'gradient' => 'bg-gradient-to-br from-emerald-100 to-emerald-300 text-emerald-800 dark:from-emerald-900 dark:to-emerald-500 dark:text-emerald-100',
+                'divide' => 'divide-emerald-600 dark:divide-emerald-400',
             ],
-        
+
             'warning' => [
-                'background' => 'bg-orange-200 dark:bg-orange-700',
-                'text' => 'text-orange-800 dark:text-orange-200',
-                'border' => 'border-orange-300 dark:border-orange-900',
-                'shadow' => 'shadow-orange-300/50 dark:shadow-orange-900/50',
+                'background' => 'bg-orange-50 dark:bg-orange-900',
+                'text' => 'text-orange-600 dark:text-orange-400',
+                'border' => 'border-orange-600 dark:border-orange-400',
+                'shadow' => 'shadow-orange-600/100 dark:shadow-orange-700/100',
                 'ring' => 'ring-orange-200 dark:ring-orange-700 ring-offset-orange-100 dark:ring-offset-orange-800',
-                'hover' => 'hover:bg-orange-300 hover:dark:bg-orange-900 hover:from-orange-400 hover:to-orange-700 hover:text-orange-800/70 hover:dark:text-orange-400/70',
-                'focus' => 'focus-within:outline focus-within:outline-orange-600 dark:focus-within:outline-orange-400 focus-within:outline-2',
-                'active' => 'bg-orange-300 dark:bg-orange-900 from-orange-400 to-orange-700',
-                'gradient' => 'bg-gradient-to-br from-orange-700 to-orange-400 text-orange-100',
-                'divide' => 'divide-orange-300 dark:divide-orange-900',
-                'accent' => 'accent-orange-600 hover:accent-orange-700',
+                'hover' => 'hover:bg-orange-100 hover:from-orange-200 hover:to-orange-400 hover:dark:bg-orange-800 hover:from:dark:bg-orange-400 dark:hover:to-orange-600',
+                'focus' => 'focus-within:border-orange-600 focus-within:border-8',
+                'active' => 'bg-orange-100 from-orange-200 to-orange-400 dark:bg-orange-800 from:dark:bg-orange-400 dark:to-orange-600',
+                'gradient' => 'bg-gradient-to-br from-orange-100 to-orange-300 text-orange-800 dark:from-orange-900 dark:to-orange-500 dark:text-orange-100',
+                'divide' => 'divide-orange-600 dark:divide-orange-400',
             ],
-        
+
             'danger' => [
-                'background' => 'bg-red-200 dark:bg-red-700',
-                'text' => 'text-red-800 dark:text-red-200',
-                'border' => 'border-red-300 dark:border-red-900',
-                'shadow' => 'shadow-red-300/50 dark:shadow-red-900/50',
+                'background' => 'bg-red-50 dark:bg-red-900',
+                'text' => 'text-red-600 dark:text-red-400',
+                'border' => 'border-red-600 dark:border-red-400',
+                'shadow' => 'shadow-red-600/100 dark:shadow-red-700/100',
                 'ring' => 'ring-red-200 dark:ring-red-700 ring-offset-red-100 dark:ring-offset-red-800',
-                'hover' => 'hover:bg-red-300 hover:dark:bg-red-900 hover:from-red-400 hover:to-red-700 hover:text-red-800/70 hover:dark:text-red-400/70',
-                'focus' => 'focus-within:outline focus-within:outline-red-600 dark:focus-within:outline-red-400 focus-within:outline-2',
-                'active' => 'bg-red-300 dark:bg-red-900 from-red-400 to-red-700',
-                'gradient' => 'bg-gradient-to-br from-red-700 to-red-400 text-red-100',
-                'divide' => 'divide-red-300 dark:divide-red-900',
-                'accent' => 'accent-red-600 hover:accent-red-700',
+                'hover' => 'hover:bg-red-100 hover:from-red-200 hover:to-red-400 hover:dark:bg-red-800 hover:from:dark:bg-red-400 dark:hover:to-red-600',
+                'focus' => 'focus-within:border-red-600 focus-within:border-8',
+                'active' => 'bg-red-100 from-red-200 to-red-400 dark:bg-red-800 from:dark:bg-red-400 dark:to-red-600',
+                'gradient' => 'bg-gradient-to-br from-red-100 to-red-300 text-red-800 dark:from-red-900 dark:to-red-500 dark:text-red-100',
+                'divide' => 'divide-red-600 dark:divide-red-400',
             ],
-        
+
         ],
 
         'components' => [
@@ -167,6 +145,9 @@ return [
                             'xl' => 'w-6',
                         ],
                     ],
+                    'dismiss-button' => [
+                        'base' => '',
+                    ],
                 ],
                 'sizes' => [
                     'xs' => 'text-xs px-2 py-1 gap-3',
@@ -177,10 +158,13 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => 'border-2',
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded',
-                    'shadow' => [false, 'shadow-md'],
+                    'rounded' => [false, 'rounded'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
+                ],
+                'options' => [
+                    'gradient' => true,
                 ],
             ],
 
@@ -207,10 +191,10 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => 'border-2',
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded-full',
-                    'shadow' => [false, 'shadow-md'],
+                    'rounded' => [false, 'rounded'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
                 ],
             ],
 
@@ -225,10 +209,13 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => 'border-2',
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded',
-                    'shadow' => [false, 'shadow-sm'],
+                    'rounded' => [false, 'rounded'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
+                ],
+                'options' => [
+                    'gradient' => true,
                 ],
             ],
 
@@ -260,16 +247,16 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'animate' => [false, 'hover:shadow-none hover:scale-95 ease-in-out duration-300'],
-                    'border' => 'border-2',
-                    'divide' => [false, 'divide-x-2'],
+                    'animate' => [false, 'hover:translate-y-0.5 hover:translate-x-0.5 ease-in-out duration-300 hover:shadow-none'],
+                    'border' => 'border-4',
+                    'divide' => [false, 'divide-x-4'],
                     'full' => [false, 'w-full'],
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded',
-                    'shadow' => [false, 'shadow-md'],
+                    'rounded' => [false, 'rounded'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
                 ],
                 'options' => [
-                    'gradient' => false,
+                    'gradient' => true,
                     'hover' => true,
                     'safe' => '[&>*]:px-2 [&>*]:py-1 [&>*]:px-3 [&>*]:py-2 [&>*]:px-4 [&>*]:py-3 [&>*]:px-5 [&>*]:py-4 [&>*]:px-6 [&>*]:py-5'
                 ],
@@ -279,11 +266,11 @@ return [
                 'base' => 'flex md:inline-flex flex-col md:flex-row [&>*]:border-[0px] [&>*]:rounded-none overflow-hidden',
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => 'border-2',
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded',
-                    'shadow' => [false, 'shadow-md'],
-                    'divide' => [false, 'divide-y-2 md:divide-x-2 md:divide-y-0'],
+                    'rounded' => [false, 'rounded'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
+                    'divide' => [false, 'divide-y-4 md:divide-x-4 md:divide-y-0'],
                 ],
             ],
 
@@ -323,11 +310,14 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => 'border-2',
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded',
-                    'shadow' => [false, 'shadow-md'],
-                    'divide' => [false, 'divide-y'],
+                    'rounded' => [false, 'rounded'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
+                    'divide' => [false, 'divide-y-4'],
+                ],
+                'options' => [
+                    'gradient' => true,
                 ],
             ],
 
@@ -342,25 +332,13 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => 'border-2',
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded',
-                    'shadow' => [false, 'shadow-md'],
+                    'rounded' => [false, 'rounded'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
                 ],
-            ],
-
-            'combine' => [
-                // 'base' => 'flex [&_*]:mb-0 [&_*:first-child]:rounded-tr-none [&_*:first-child]:rounded-br-none [&_*:first-child]:border-r-0 [&>*:last-child]:rounded-tl-none [&>*:last-child]:rounded-bl-none [&>*:last-child]:border-l-0',
-                // 'base' => 'flex gap-0.5 [&_*]:m-0 [&_*]:rounded-none',
-                'base' => 'flex overflow-hidden',
-                'attributes' => [
-                    'accent' => [false, 'border-l-8'],
-                    'border' => 'border-2',
-                    'divide' => [false, 'divide-x-2'],
-                    'full' => [false, 'w-full'],
-                    'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded-lg',
-                    'shadow' => [false, 'shadow-md'],
+                'options' => [
+                    'gradient' => true,
                 ],
             ],
 
@@ -372,7 +350,7 @@ return [
                     'base' => 'max-w-5xl mx-5 p-4 md:p-10',
                     'lg' => 'max-w-6xl mx-5 p-4 md:p-12',
                     'xl' => 'max-w-7xl mx-5 p-4 md:p-14',
-                    'full' => 'max-w-full p-4 md:p-16',
+                    'full' => 'max-w-full mx-5 p-4 md:p-16',
                 ],
                 'grids' => [
                     '1' => 'grid md:grid-cols-1 gap-4',
@@ -384,11 +362,11 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => 'border-2',
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded',
-                    'shadow' => [false, 'shadow-md'],
-                    'divide' => [false, 'divide-y'],
+                    'rounded' => [false, 'rounded'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
+                    'divide' => [false, 'divide-y-4'],
                 ],
                 'options' => [
                     'background' => true,
@@ -407,10 +385,10 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => 'border-2',
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded',
-                    'shadow' => [false, 'shadow-md'],
+                    'rounded' => [false, 'rounded'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
                 ],
             ],
 
@@ -457,10 +435,10 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => 'border-2',
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded',
-                    'shadow' => [false, 'shadow-md'],
+                    'rounded' => [false, 'rounded'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
                 ],
             ],
 
@@ -576,7 +554,7 @@ return [
                         ],
                     ],
                     'input-checkbox-wrapper' => [
-                        'base' => 'flex items-center gap-1',
+                        'base' => 'flex items-center gap-2',
                         'sizes' => [
                             'xs' => '',
                             'sm' => '',
@@ -606,7 +584,7 @@ return [
                         ],
                     ],
                     'input-radio-wrapper' => [
-                        'base' => 'flex items-center gap-1',
+                        'base' => 'flex items-center gap-2',
                         'sizes' => [
                             'xs' => '',
                             'sm' => '',
@@ -695,12 +673,11 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => 'border-2',
-                    'full' => [false, 'w-full'],
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded',
-                    'shadow' => [false, 'shadow-md'],
-                    'divide' => [false, 'divide-x-2'],
+                    'rounded' => [false, 'rounded'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
+                    'divide' => [false, 'divide-x-4'],
                 ],
                 'options' => [
                     'background' => true,
@@ -742,10 +719,10 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => 'border-2',
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded',
-                    'shadow' => [false, 'shadow-md'],
+                    'rounded' => [false, 'rounded'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
                     'divide' => [false, 'divide-x'],
                     'full' => [false, 'w-full'],
                 ],
@@ -755,7 +732,7 @@ return [
             ],
 
             'label' => [
-                'base' => 'flex items-center mb-1',
+                'base' => 'flex items-center',
                 'sizes' => [
                     'xs' => 'text-xs mb-1 gap-0.5',
                     'sm' => 'text-sm mb-1 gap-1',
@@ -811,11 +788,14 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => 'border-2',
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded',
-                    'shadow' => [false, 'shadow-md'],
+                    'rounded' => [false, 'rounded'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
                     'divide' => [false, 'divide-y'],
+                ],
+                'options' => [
+                    'gradient' => true,
                 ],
             ],
 
@@ -830,16 +810,16 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => 'border-2',
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded',
-                    'shadow' => [false, 'shadow-md'],
+                    'rounded' => [false, 'rounded'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
                     'full' => 'w-full',
                 ],
             ],
 
             'menu' => [
-                'base' => 'hidden lg:flex flex-col items-center lg:flex-row w-full md:w-auto',
+                'base' => 'hidden lg:flex flex-col items-center lg:flex-row gap-5 w-full md:w-auto',
                 'sizes' => [
                     'xs' => 'p-1 md:p-3 mt-5 lg:mt-0 gap-3',
                     'sm' => 'p-2 md:p-4 mt-5 lg:mt-0 gap-4',
@@ -850,11 +830,14 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => [false, 'border-2'],
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
                     'rounded' => [false, 'rounded'],
-                    'shadow' => [false, 'shadow-md'],
-                    'divide' => [false, 'divide-x-2'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
+                    'divide' => [false, 'divide-x-4'],
+                ],
+                'options' => [
+                    'background' => false,
                 ],
             ],
 
@@ -862,7 +845,7 @@ return [
                 'base' => '',
                 'children' => [
                     'backdrop' => [
-                        'base' => 'hidden bg-slate-700/90 p-10 fixed top-0 left-0 w-full h-full justify-center items-center z-50',
+                        'base' => 'hidden bg-slate-700/80 p-10 fixed top-0 left-0 w-full h-full justify-center items-center z-50',
                     ],
                     'content' => [
                         'base' => 'max-h-full relative top-0 overflow-auto',
@@ -912,11 +895,14 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => [false, 'border-2'],
+                    'border' => [false, 'border-4'],
                     'ring' => [false, 'ring-2 ring-offset-2'],
                     'rounded' => [false, 'rounded'],
-                    'shadow' => [false, 'shadow-md'],
-                    'divide' => [false, 'divide-y'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
+                    'divide' => [false, 'divide-y-4'],
+                ],
+                'options' => [
+                    'gradient' => true,
                 ],
             ],
 
@@ -931,15 +917,15 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'animate' => [false, 'hover:shadow-none hover:scale-95 ease-in-out duration-300'],
-                    'border' => [false, 'border-2'],
+                    'animate' => [false, 'hover:translate-y-0.5 hover:translate-x-0.5 ease-in-out duration-300 hover:shadow-none'],
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded',
-                    'shadow' => [false, 'shadow-md'],
-                    'divide' => [false, 'divide-x-2'],
+                    'rounded' => [false, 'rounded'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
+                    'divide' => [false, 'divide-x-4'],
                 ],
                 'options' => [
-                    'gradient' => false,
+                    'gradient' => true,
                     'hover' => true,
                     'safe' => '[&>*]:px-2 [&>*]:py-1 [&>*]:px-3 [&>*]:py-2 [&>*]:px-4 [&>*]:py-3 [&>*]:px-5 [&>*]:py-4 [&>*]:px-6 [&>*]:py-5'
                 ],
@@ -949,7 +935,7 @@ return [
                 'base' => '',
                 'children' => [
                     'bar' => [
-                        'base' => 'bg-white dark:bg-slate-800 rounded-full',
+                        'base' => 'bg-white dark:bg-slate-800',
                     ],
                     'label' => [
                         'base' => '',
@@ -973,13 +959,13 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => [false, 'border'],
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded-full',
-                    'shadow' => [false, 'shadow-md'],
+                    'rounded' => [false, 'rounded'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
                 ],
                 'options' => [
-                    'gradient' => false,
+                    'gradient' => true,
                 ],
             ],
 
@@ -1046,14 +1032,14 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => 'border-2',
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded',
-                    'shadow' => [false, 'shadow-md'],
-                    'divide' => [false, 'divide-x-2'],
+                    'rounded' => [false, 'rounded'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
+                    'divide' => [false, 'divide-x-4'],
                 ],
                 'options' => [
-                    'background' => true,
+                    'background' => false,
                     'focus' => true,
                 ],
             ],
@@ -1131,11 +1117,11 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => 'border-2',
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded',
-                    'shadow' => [false, 'shadow-md'],
-                    'divide' => [false, 'divide-y'],
+                    'rounded' => [false, 'rounded'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
+                    'divide' => [false, 'divide-y-4'],
                 ],
             ],
 
@@ -1157,10 +1143,10 @@ return [
                     'xl' => 'w-20 h-14 p-2 after:w-10 after:h-10 peer-checked:after:translate-x-6',
                 ],
                 'attributes' => [
-                    'border' => [false, 'border'],
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded-full after:rounded-full',
-                    'shadow' => [false, 'shadow-md'],
+                    'rounded' => [false, 'rounded-full after:rounded-full'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
                 ],
             ],
 
@@ -1207,12 +1193,12 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => [false, 'border'],
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
                     'rounded' => [false, 'rounded'],
-                    'shadow' => [false, 'shadow-md'],
-                    'divide' => [false, '[&_table]:divide-y'],
-                    'striped' => [false, '[&>tbody>*:nth-child(odd)]:bg-slate-900/5 [&>tbody>*:nth-child(odd)]:dark:bg-slate-900/50'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
+                    'divide' => [false, '[&_table]:divide-y-4'],
+                    'striped' => [false, '[&_table>tbody>*:nth-child(odd)]:bg-slate-900/5 [&_table>tbody>*:nth-child(odd)]:dark:bg-slate-900/50'],
                 ],
             ],
 
@@ -1262,11 +1248,11 @@ return [
                         'xl' => 'text-xl md:text-2xl font-bold mb-1',
                     ],
                     'p' => [
-                        'xs' => 'text-xs md:text-sm mb-5 leading-relaxed md:leading-relaxed',
-                        'sm' => 'text-sm md:text-base mb-5 leading-relaxed md:leading-relaxed',
-                        'base' => 'text-base md:text-lg mb-5 leading-relaxed md:leading-relaxed',
-                        'lg' => 'text-lg md:text-xl mb-5 leading-relaxed md:leading-relaxed',
-                        'xl' => 'text-xl md:text-2xl mb-5 leading-relaxed md:leading-relaxed',
+                        'xs' => 'text-xs md:text-sm mb-5',
+                        'sm' => 'text-sm md:text-base mb-5',
+                        'base' => 'text-base md:text-lg mb-5',
+                        'lg' => 'text-lg md:text-xl mb-5',
+                        'xl' => 'text-xl md:text-2xl mb-5',
                     ],
                 ],
                 'options' => [
@@ -1323,11 +1309,11 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => 'border-2',
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded',
-                    'shadow' => [false, 'shadow-md'],
-                    'divide' => [false, 'divide-y'],
+                    'rounded' => [false, 'rounded'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
+                    'divide' => [false, 'divide-y-4'],
                 ],
                 'options' => [
                     'focus' => true,
@@ -1398,14 +1384,13 @@ return [
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
-                    'border' => 'border-2',
+                    'border' => 'border-4',
                     'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded',
-                    'shadow' => [false, 'shadow-md'],
+                    'rounded' => [false, 'rounded'],
+                    'shadow' => 'shadow-[5px_5px_0_0_rgba(0,0,0,1)]',
                 ],
                 'options' => [
-                    'gradient' => false,
-                    'hover' => false,
+                    'gradient' => true,
                 ],
             ],
 

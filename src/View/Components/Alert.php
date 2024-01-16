@@ -23,6 +23,10 @@ class Alert extends Component
         public ?string $theme = null,
         public ?string $title = null,
         public ?string $variant = null,
+        public ?string $contentClasses = null,
+        public ?string $dismissButtonClasses = null,
+        public ?string $dismissIconClasses = null,
+        public ?string $titleClasses = null,
     ) {
         $classes = $turbine->classBuilder(
             'alert',
@@ -40,6 +44,21 @@ class Alert extends Component
         );
 
         $this->classes = $classes;
+
+        $childrenClasses = $turbine->childrenClasses(
+            'alert',
+            [
+                'content',
+                'dismissButton',
+                'dismissIcon',
+                'title',
+            ],
+            $size,
+        );
+
+        foreach ($childrenClasses as $key => $value) {
+            $this->$key = $value;
+        }
     }
 
     public function render()

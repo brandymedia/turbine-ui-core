@@ -23,6 +23,11 @@ class Toast extends Component
         public ?string $theme = null,
         public ?string $title = null,
         public ?string $variant = null,
+        public ?string $contentClasses = null,
+        public ?string $dismissButtonClasses = null,
+        public ?string $dismissIconClasses = null,
+        public ?string $titleClasses = null,
+        public ?string $toastClasses = null,
     ) {
         $classes = $turbine->classBuilder(
             'toast',
@@ -40,6 +45,22 @@ class Toast extends Component
         );
 
         $this->classes = $classes;
+
+        $childrenClasses = $turbine->childrenClasses(
+            'toast',
+            [
+                'content',
+                'dismissButton',
+                'dismissIcon',
+                'title',
+                'toast',
+            ],
+            $size,
+        );
+
+        foreach ($childrenClasses as $key => $value) {
+            $this->$key = $value;
+        }
     }
 
     public function render()

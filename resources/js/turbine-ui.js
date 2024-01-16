@@ -1,15 +1,19 @@
 (function()
 {
 
-    document.querySelectorAll('.turbine-ui-dismissible').forEach(item => {
+    document.querySelectorAll('.tui-dismissible').forEach(item => {
         item.addEventListener('click', e => {
+            let toast = e.currentTarget.classList.contains('tui-toast');
+            if (toast) {
+                e.currentTarget.parentNode.parentNode.remove();
+            }
             e.currentTarget.parentNode.remove();
         })
     });
 
-    const burger = document.querySelector('.turbine-ui-burger');
-    const menu = document.querySelector('.turbine-ui-menu');
-    const bars = document.querySelectorAll('.turbine-ui-bar');
+    const burger = document.querySelector('.tui-burger');
+    const menu = document.querySelector('.tui-menu');
+    const bars = document.querySelectorAll('.tui-bar');
 
     if (burger) {
         burger.addEventListener('click', () => {

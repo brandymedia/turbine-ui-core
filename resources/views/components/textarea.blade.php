@@ -1,18 +1,20 @@
-<div>
-    @if ($label)
-        <x-turbine-ui-label for="{{ $attributes['name'] }}" variant="{{ $variant }}" size="{{ $size }}">{{ $label }}</x-turbine-ui-label>
-    @endif
+@if ($label)
+<div {{ $attributes->twMergeFor('textarea-wrapper', 'tui-textarea-wrapper '.$textareaWrapperClasses) }}>
+    <x-turbine-ui-label for="{{ $attributes['name'] }}" variant="{{ $variant }}" {{ $attributes->twMergeFor('label', 'tui-label '.$labelClasses) }}>{{ $label }}</x-turbine-ui-label>
+@endif
     <div {{ $attributes->only('class')->twMerge(['class' => $classes]) }}>
         @isset($header)
-            <div {{ $header->attributes->class([]) }}>
+            <div {{ $attributes->twMergeFor('header', 'tui-header '.$headerClasses.' '.$header->attributes['class']) }}>
                 {{ $header }}
             </div>
         @endisset
-        <textarea {{ $attributes->except('class') }}>{{ $slot }}</textarea>
+        <textarea {{ $attributes->except('class') }} {{ $attributes->twMergeFor('textarea', 'tui-textarea '.$textareaClasses) }}>{{ $slot }}</textarea>
         @isset($footer)
-            <div {{ $footer->attributes->class([]) }}>
+            <div {{ $attributes->twMergeFor('footer', 'tui-footer '.$footerClasses.' '.$footer->attributes['class']) }}>
                 {{ $footer }}
             </div>
         @endisset
     </div>
+@if ($label)
 </div>
+@endif

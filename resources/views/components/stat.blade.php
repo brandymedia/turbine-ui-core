@@ -1,19 +1,19 @@
 <div {{ $attributes->twMerge(['class' => $classes]) }}>
     @isset($icon)
-        <div class="tui-stat-icon">{!! $icon !!}</div>
+        <div {{ $attributes->twMergeFor('icon', 'tui-icon '.$iconClasses) }}>{!! $icon !!}</div>
     @endisset
     @isset($title)
-        <div {{ $title->attributes->class(['tui-stat-title']) }}>
+        <div {{ $attributes->twMergeFor('title', 'tui-title '.$titleClasses.' '.$title->attributes['class']) }}>
             {{ $title }}
         </div>
     @endisset
     @isset($value)
-        <div {{ $value->attributes->class(['tui-stat-value']) }}>
+        <div {{ $attributes->twMergeFor('value', 'tui-value '.$valueClasses.' '.$value->attributes['class']) }}>
             {{ $value }}
         </div>
     @endisset
     @isset($description)
-        <div {{ $description->attributes->class(['tui-stat-description']) }}>
+        <div {{ $attributes->twMergeFor('description', 'tui-description '.$descriptionClasses.' '.$description->attributes['class']) }}>
             {{ $description }}
         </div>
     @endisset

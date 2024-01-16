@@ -1,17 +1,17 @@
 <div {{ $attributes->twMerge(['class' => $classes]) }}>
     {{ $slot }}
     @isset($header)
-        <div {{ $header->attributes->class([]) }}>
+        <div {{ $attributes->twMergeFor('header', 'tui-header '.$headerClasses.' '.$header->attributes['class']) }}>
             {{ $header }}
         </div>
     @endisset
     @isset($body)
-        <div {{ $body->attributes->class([]) }}>
+        <div {{ $attributes->twMergeFor('body', 'tui-body '.$bodyClasses.' '.$body->attributes['class']) }}>
             {{ $body }}
         </div>
     @endisset
     @isset($footer)
-        <div {{ $footer->attributes->class([]) }}>
+        <div {{ $attributes->twMergeFor('footer', 'tui-footer '.$footerClasses.' '.$footer->attributes['class']) }}>
             {{ $footer }}
         </div>
     @endisset

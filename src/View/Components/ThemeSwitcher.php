@@ -5,43 +5,38 @@ namespace Brandymedia\TurbineUiCore\View\Components;
 use Illuminate\View\Component;
 use Brandymedia\TurbineUiCore\Turbine;
 
-class Modal extends Component
+class ThemeSwitcher extends Component
 {
     public function __construct(
         private Turbine $turbine,
         public ?string $classes = null,
-        public ?bool $dismissible = null,
-        public ?string $size = null,
-        public ?string $target = null,
         public ?string $theme = null,
         public ?string $variant = null,
-        public ?string $backdropClasses = null,
-        public ?string $contentClasses = null,
-        public ?string $dismissButtonClasses = null,
-        public ?string $dismissIconClasses = null,
+        public $darkButtonClasses = null,
+        public $lightButtonClasses = null,
+        public $listGroupClasses = null,
+        public $switchButtonClasses = null,
+        public $systemButtonClasses = null,
     ) {
-        $this->target = $target;
-
         $classes = $turbine->classBuilder(
-            'modal',
+            'theme-switcher',
             $variant,
-            [
-                'size' => $size,
-            ],
+            [],
             $theme,
         );
 
         $this->classes = $classes;
-
+        
         $childrenClasses = $turbine->childrenClasses(
-            'modal',
+            'theme-switcher',
             [
-                'backdrop',
-                'content',
-                'dismissButton',
-                'dismissIcon',
+                'darkButton',
+                'lightButton',
+                'listGroup',
+                'switchButton',
+                'systemButton',
             ],
-            $size,
+            null
         );
 
         foreach ($childrenClasses as $key => $value) {
@@ -51,6 +46,6 @@ class Modal extends Component
 
     public function render()
     {
-        return view('turbine-ui::components.modal');
+        return view('turbine-ui::components.theme-switcher');
     }
 }

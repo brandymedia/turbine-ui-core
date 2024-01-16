@@ -1,10 +1,10 @@
-<div class="turbine-ui-dropdown-{{ $target }}">
+<div class="tui-dropdown-{{ $target }}">
     {{ $slot }}
     <div id="{{ $target }}" {{ $attributes->twMerge(['class' => $classes]) }}>
         {{ $content }}
     </div>
     <script>
-        let thisDropdownContainer{{ Str::studly($target) }} = document.querySelector('.turbine-ui-dropdown-{{ $target }}');
+        let thisDropdownContainer{{ Str::studly($target) }} = document.querySelector('.tui-dropdown-{{ $target }}');
         let thisDropdown{{ Str::studly($target) }} = document.querySelector('#{{ $target }}');
         let thisDropdownButton{{ Str::studly($target) }} = thisDropdownContainer{{ Str::studly($target) }}.querySelector('button');
 

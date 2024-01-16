@@ -10,6 +10,7 @@ class Button extends Component
     public function __construct(
         private Turbine $turbine,
         public ?string $accent = null,
+        public ?string $active = null,
         public ?string $animate = null,
         public ?string $border = null,
         public ?string $classes = null,
@@ -29,12 +30,16 @@ class Button extends Component
         public ?string $theme = null,
         public ?string $type = null,
         public ?string $variant = null,
+        public ?string $contentClasses = null,
+        public ?string $prefixClasses = null,
+        public ?string $suffixClasses = null,
     ) {
         $classes = $turbine->classBuilder(
             'button',
             $variant,
             [
                 'accent' => $accent,
+                'active' => $active,
                 'animate' => $animate,
                 'border' => $border,
                 'divide' => $divide,
@@ -52,6 +57,20 @@ class Button extends Component
         );
 
         $this->classes = $classes;
+
+        $childrenClasses = $turbine->childrenClasses(
+            'button',
+            [
+                'content',
+                'prefix',
+                'suffix',
+            ],
+            $size,
+        );
+
+        foreach ($childrenClasses as $key => $value) {
+            $this->$key = $value;
+        }
     }
 
     public function render()

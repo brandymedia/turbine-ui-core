@@ -26,7 +26,20 @@ class Input extends Component
         public ?string $theme = null,
         public ?string $type = null,
         public ?string $variant = null,
-
+        public ?string $inputClasses = null,
+        public ?string $inputWrapperClasses = null,
+        public ?string $inputCheckboxClasses = null,
+        public ?string $inputCheckboxWrapperClasses = null,
+        public ?string $inputCheckboxLabelClasses = null,
+        public ?string $inputRadioClasses = null,
+        public ?string $inputRadioWrapperClasses = null,
+        public ?string $inputRadioLabelClasses = null,
+        public ?string $inputRangeClasses = null,
+        public ?string $inputRangeWrapperClasses = null,
+        public ?string $inputRangeLabelClasses = null,
+        public ?string $labelClasses = null,
+        public ?string $prefixClasses = null,
+        public ?string $suffixClasses = null,
     ) {
         $classes = $turbine->classBuilder(
             'input',
@@ -50,6 +63,31 @@ class Input extends Component
         );
 
         $this->classes = $classes;
+
+        $childrenClasses = $turbine->childrenClasses(
+            'input',
+            [
+                'input',
+                'inputWrapper',
+                'inputCheckbox',
+                'inputCheckboxWrapper',
+                'inputCheckboxLabel',
+                'inputRange',
+                'inputRangeWrapper',
+                'inputRangeLabel',
+                'inputRadio',
+                'inputRadioWrapper',
+                'inputRadioLabel',
+                'label',
+                'prefix',
+                'suffix',
+            ],
+            $size,
+        );
+
+        foreach ($childrenClasses as $key => $value) {
+            $this->$key = $value;
+        }
     }
 
     public function render()

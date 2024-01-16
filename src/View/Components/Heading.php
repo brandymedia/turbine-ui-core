@@ -11,6 +11,7 @@ class Heading extends Component
         private Turbine $turbine,
         public ?string $balance = null,
         public ?string $classes = null,
+        public ?string $heading = null,
         public ?string $level = null,
         public ?string $pretty = null,
         public ?string $size = null,
@@ -31,6 +32,16 @@ class Heading extends Component
         );
 
         $this->classes = $classes;
+
+        $this->heading = match ($this->level) {
+            '1' => 'h1',
+            '2' => 'h2',
+            '3' => 'h3',
+            '4' => 'h4',
+            '5' => 'h5',
+            '6' => 'h6',
+            default => 'h3',
+        };
     }
 
     public function render()

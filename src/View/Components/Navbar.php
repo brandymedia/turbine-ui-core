@@ -20,6 +20,8 @@ class Navbar extends Component
         public ?string $size = null,
         public ?string $theme = null,
         public ?string $variant = null,
+        public ?string $brandClasses = null,
+        public ?string $contentClasses = null,
     ) {
         $classes = $turbine->classBuilder(
             'navbar',
@@ -38,6 +40,19 @@ class Navbar extends Component
         );
 
         $this->classes = $classes;
+
+        $childrenClasses = $turbine->childrenClasses(
+            'navbar',
+            [
+                'brand',
+                'content',
+            ],
+            $size,
+        );
+
+        foreach ($childrenClasses as $key => $value) {
+            $this->$key = $value;
+        }
     }
 
     public function render()

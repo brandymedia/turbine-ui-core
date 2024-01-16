@@ -17,8 +17,11 @@ class Sidebar extends Component
         public ?string $ring = null,
         public ?string $rounded = null,
         public ?string $shadow = null,
+        public ?string $size = null,
         public ?string $theme = null,
         public ?string $variant = null,
+        public ?string $dismissButtonClasses = null,
+        public ?string $dismissIconClasses = null,
     ) {
         $classes = $turbine->classBuilder(
             'sidebar',
@@ -30,11 +33,25 @@ class Sidebar extends Component
                 'ring' => $ring,
                 'rounded' => $rounded,
                 'shadow' => $shadow,
+                'size' => $size,
             ],
             $theme,
         );
 
         $this->classes = $classes;
+
+        $childrenClasses = $turbine->childrenClasses(
+            'modal',
+            [
+                'dismissButton',
+                'dismissIcon',
+            ],
+            $size,
+        );
+
+        foreach ($childrenClasses as $key => $value) {
+            $this->$key = $value;
+        }
     }
 
     public function render()

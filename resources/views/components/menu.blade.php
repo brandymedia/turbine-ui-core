@@ -1,3 +1,3 @@
-<ul {{ $attributes->twMerge(['class' => $classes]) }}>
+<ul {{ $attributes->twMerge(['class' => 'tui-menu '.$classes]) }}>
     {{ $slot }}
 </ul>

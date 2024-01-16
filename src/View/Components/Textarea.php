@@ -21,6 +21,11 @@ class Textarea extends Component
         public ?string $size = null,
         public ?string $theme = null,
         public ?string $variant = null,
+        public ?string $footerClasses = null,
+        public ?string $headerClasses = null,
+        public ?string $labelClasses = null,
+        public ?string $textareaClasses = null,
+        public ?string $textareaWrapperClasses = null,
     ) {
         $classes = $turbine->classBuilder(
             'textarea',
@@ -40,6 +45,22 @@ class Textarea extends Component
         );
 
         $this->classes = $classes;
+
+        $childrenClasses = $turbine->childrenClasses(
+            'textarea',
+            [
+                'footer',
+                'header',
+                'label',
+                'textarea',
+                'textareaWrapper',
+            ],
+            $size,
+        );
+
+        foreach ($childrenClasses as $key => $value) {
+            $this->$key = $value;
+        }
     }
 
     public function render()

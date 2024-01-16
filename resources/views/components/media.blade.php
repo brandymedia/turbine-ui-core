@@ -1,18 +1,18 @@
 <div {{ $attributes->twMerge(['class' => $classes]) }}>
     {{ $slot }}
     @isset($thumbnail)
-        <div {{ $thumbnail->attributes->class(['tui-media-thumbnail shrink-0']) }}>
+        <div {{ $attributes->twMergeFor('thumbnail', 'tui-thumbnail '.$thumbnailClasses.' '.$thumbnail->attributes['class']) }}>
             {{ $thumbnail }}
         </div>
-    @endisset
-    <div class="tui-media-body">
+    @endisset    
+    <div {{ $attributes->twMergeFor('body', 'tui-body '.$bodyClasses) }}>
         @isset($title)
-            <div {{ $title->attributes->class(['tui-media-title']) }}>
+            <div {{ $attributes->twMergeFor('title', 'tui-title '.$titleClasses.' '.$title->attributes['class']) }}>
                 {{ $title }}
             </div>
         @endisset
         @isset($description)
-            <div {{ $description->attributes->class(['tui-media-description']) }}>
+            <div {{ $attributes->twMergeFor('description', 'tui-description '.$descriptionClasses.' '.$description->attributes['class']) }}>
                 {{ $description }}
             </div>
         @endisset

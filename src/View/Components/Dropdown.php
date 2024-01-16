@@ -19,7 +19,6 @@ class Dropdown extends Component
         public ?string $target = null,
         public ?string $theme = null,
         public ?string $variant = null,
-
     ) {
         $classes = $turbine->classBuilder(
             'dropdown',

@@ -405,12 +405,13 @@ class Turbine
     {   
         $sizeClasses = collect();
         $hasSize = $this->theme['design']['components'][$component]['sizes'][$size] ?? null;
+        $base = config('turbine.components.'.$component.'.size') ?? 'base';
 
         if ($hasSize) {
             $sizeClasses->put('size', $hasSize);
         } else {
-            if (isset($this->theme['design']['components'][$component]['sizes']['base'])) {
-                $sizeClasses->put('size', $this->theme['design']['components'][$component]['sizes']['base']);
+            if (isset($this->theme['design']['components'][$component]['sizes'][$base])) {
+                $sizeClasses->put('size', $this->theme['design']['components'][$component]['sizes'][$base]);
             }
         }
 
@@ -527,6 +528,27 @@ class Turbine
         }
 
         return $currentTheme;
+    }
+
+    public function childrenClasses($component, $children = null, $size)
+    {
+        $childrenClasses = [];
+        
+        if ($children) {
+            foreach ($children as $child) {
+                $childName = Str::kebab($child);
+                $base = $this->theme['design']['components'][$component]['children'][$childName]['base'] ?? null;
+                $hasSize = $this->theme['design']['components'][$component]['children'][$childName]['sizes'][$size] ?? null;
+
+                if (!$hasSize) {
+                    $hasSize = $this->theme['design']['components'][$component]['children'][$childName]['sizes']['base'] ?? null;
+                }
+                
+                $childrenClasses[$child.'Classes'] = $base . ' ' . $hasSize;                
+            }
+        }
+
+        return $childrenClasses;
     }
 
 }
