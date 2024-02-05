@@ -47,7 +47,7 @@ class Badge extends Component
 
         $this->classes = $classes;
 
-        $childrenClasses = $turbine->childrenClasses(
+        $elementClasses = $turbine->elementClasses(
             'badge',
             [
                 'content',
@@ -58,7 +58,7 @@ class Badge extends Component
             $size,
         );
 
-        foreach ($childrenClasses as $key => $value) {
+        foreach ($elementClasses as $key => $value) {
             $this->$key = $value;
         }
     }

@@ -58,7 +58,7 @@ class Button extends Component
 
         $this->classes = $classes;
 
-        $childrenClasses = $turbine->childrenClasses(
+        $elementClasses = $turbine->elementClasses(
             'button',
             [
                 'content',
@@ -68,7 +68,21 @@ class Button extends Component
             $size,
         );
 
-        foreach ($childrenClasses as $key => $value) {
+        if (!$divide) {
+            if (isset($prefix)) {
+                $elementClasses['contentClasses'] .= ' pl-0';
+                $elementClasses['prefixClasses'] .= ' pr-0';
+            }
+
+            if (isset($suffix)) {
+                $elementClasses['contentClasses'] .= ' pr-0';
+                $elementClasses['suffixClasses'] .= ' pl-0';
+            }
+        } else {
+            $this->classes .= ' gap-0';
+        }
+
+        foreach ($elementClasses as $key => $value) {
             $this->$key = $value;
         }
     }

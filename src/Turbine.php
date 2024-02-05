@@ -148,8 +148,6 @@ class Turbine
     private function buttonComponent($component, $attributes, $classes)
     {
         $attributes = collect($attributes);
-
-        $divide = $attributes->get('divide');
         $link = $attributes->get('link');
 
         if ($link) {
@@ -161,66 +159,8 @@ class Turbine
             $classes->forget('gradient');
             $classes->forget('divide');
             $classes = collect(explode(' ', collect($classes)->flatten()->implode(' ')));
-            
-            $extractPadding = $this->extractPadding($classes);
-            foreach ($extractPadding as $eP) {
-                $key = $classes->search($eP);
-                $classes->forget($key);
-            }
-
-        } else {
-            if ($divide) {
-                $classes = collect(explode(' ', collect($classes)->flatten()->implode(' ')));
-                $extractPadding = $this->extractPadding($classes);
-                $extractGap = $this->extractGap($classes);
-        
-                foreach ($extractPadding as $eP) {
-                    $key = $classes->search($eP);
-                    $classes->forget($key);
-                    $classes->push('[&>*]:'.$eP);
-                }
+        }   
     
-                foreach ($extractGap as $eG) {
-                    $key = $classes->search($eG);
-                    $classes->forget($key);
-                    $classes->push('[&>*]:'.$eG);
-                }
-            }
-        }    
-    
-        return $classes;
-    }
-
-    private function navLinkComponent($component, $attributes, $classes)
-    {
-        $attributes = collect($attributes);
-        
-        if ($classes->has('size')) {
-            $size = $classes->get('size');
-        } else {
-            $size = $this->theme['design']['components'][$component]['sizes']['base'] ?? null;
-        }
-
-        $divide = $attributes->get('divide');
-        
-        if ($divide) {
-            $classes = collect(explode(' ', collect($classes)->flatten()->implode(' ')));
-            $extractPadding = $this->extractPadding($classes);
-            $extractGap = $this->extractGap($classes);
-    
-            foreach ($extractPadding as $eP) {
-                $key = $classes->search($eP);
-                $classes->forget($key);
-                $classes->push('[&>*]:'.$eP);
-            }
-
-            foreach ($extractGap as $eG) {
-                $key = $classes->search($eG);
-                $classes->forget($key);
-                $classes->push('[&>*]:'.$eG);
-            }
-        }
-        
         return $classes;
     }
 
@@ -530,25 +470,25 @@ class Turbine
         return $currentTheme;
     }
 
-    public function childrenClasses($component, $children = null, $size)
+    public function elementClasses($component, $elements = null, $size)
     {
-        $childrenClasses = [];
+        $elementClasses = [];
         
-        if ($children) {
-            foreach ($children as $child) {
-                $childName = Str::kebab($child);
-                $base = $this->theme['design']['components'][$component]['children'][$childName]['base'] ?? null;
-                $hasSize = $this->theme['design']['components'][$component]['children'][$childName]['sizes'][$size] ?? null;
+        if ($elements) {
+            foreach ($elements as $element) {
+                $elementName = Str::kebab($element);
+                $base = $this->theme['design']['components'][$component]['elements'][$elementName]['base'] ?? null;
+                $hasSize = $this->theme['design']['components'][$component]['elements'][$elementName]['sizes'][$size] ?? null;
 
                 if (!$hasSize) {
-                    $hasSize = $this->theme['design']['components'][$component]['children'][$childName]['sizes']['base'] ?? null;
+                    $hasSize = $this->theme['design']['components'][$component]['elements'][$elementName]['sizes']['base'] ?? null;
                 }
                 
-                $childrenClasses[$child.'Classes'] = $base . ' ' . $hasSize;                
+                $elementClasses[$element.'Classes'] = $base . ' ' . $hasSize;                
             }
         }
 
-        return $childrenClasses;
+        return $elementClasses;
     }
 
 }

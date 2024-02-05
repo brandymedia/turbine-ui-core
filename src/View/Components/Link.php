@@ -51,7 +51,7 @@ class Link extends Component
 
         $this->classes = $classes;
 
-        $childrenClasses = $turbine->childrenClasses(
+        $elementClasses = $turbine->elementClasses(
             'link',
             [
                 'content',
@@ -61,7 +61,7 @@ class Link extends Component
             $size,
         );
 
-        foreach ($childrenClasses as $key => $value) {
+        foreach ($elementClasses as $key => $value) {
             $this->$key = $value;
         }
     }

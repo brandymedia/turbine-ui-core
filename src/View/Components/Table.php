@@ -44,7 +44,7 @@ class Table extends Component
 
         $this->classes = $classes;
 
-        $childrenClasses = $turbine->childrenClasses(
+        $elementClasses = $turbine->elementClasses(
             'table',
             [
                 'tbody',
@@ -54,7 +54,7 @@ class Table extends Component
             $size,
         );
 
-        foreach ($childrenClasses as $key => $value) {
+        foreach ($elementClasses as $key => $value) {
             $this->$key = $value;
         }
     }

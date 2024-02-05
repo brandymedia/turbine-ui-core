@@ -1,4 +1,4 @@
-<div class="tui-dropdown-{{ $target }}">
+<div class="tui-dropdown-{{ $target }} relative">
     {{ $slot }}
     <div id="{{ $target }}" {{ $attributes->twMerge(['class' => $classes]) }}>
         {{ $content }}

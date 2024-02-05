@@ -121,7 +121,7 @@ return [
 
             'alert' => [
                 'base' => 'flex flex-wrap items-center',
-                'children' => [
+                'elements' => [
                     'content' => [
                         'base' => 'flex flex-col flex-1 gap-1',
                     ],
@@ -170,7 +170,7 @@ return [
 
             'avatar' => [
                 'base' => 'inline-flex',
-                'children' => [
+                'elements' => [
                     'label' => [
                         'base' => 'flex w-full justify-center items-center',
                         'sizes' => [
@@ -221,7 +221,7 @@ return [
 
             'burger' => [
                 'base' => 'lg:hidden',
-                'children' => [
+                'elements' => [
                     'bar' => [
                         'base' => 'h-1 w-7 my-1.5 duration-300',
                     ],
@@ -232,18 +232,45 @@ return [
             ],
 
             'button' => [
-                'base' => 'inline-flex justify-center items-center text-center',
-                'children' => [
+                'base' => 'inline-flex justify-center items-center text-center overflow-hidden',
+                'elements' => [
                     'content' => [
                         'base' => 'grow',
+                        'sizes' => [
+                            'xs' => 'px-2 py-1',
+                            'sm' => 'px-3 py-2',
+                            'base' => 'px-4 py-3',
+                            'lg' => 'px-5 py-4',
+                            'xl' => 'px-6 py-5',
+                        ],
+                    ],
+                    'prefix' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => 'px-2 py-1',
+                            'sm' => 'px-3 py-2',
+                            'base' => 'px-4 py-3',
+                            'lg' => 'px-5 py-4',
+                            'xl' => 'px-6 py-5',
+                        ],
+                    ],
+                    'suffix' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => 'px-2 py-1',
+                            'sm' => 'px-3 py-2',
+                            'base' => 'px-4 py-3',
+                            'lg' => 'px-5 py-4',
+                            'xl' => 'px-6 py-5',
+                        ],
                     ],
                 ],
                 'sizes' => [
-                    'xs' => 'text-xs px-2 py-1 gap-1',
-                    'sm' => 'text-sm px-3 py-2 gap-2',
-                    'base' => 'text-base px-4 py-3 gap-2',
-                    'lg' => 'text-lg px-5 py-4 gap-3',
-                    'xl' => 'text-xl px-6 py-5 gap-4',
+                    'xs' => 'text-xs gap-1',
+                    'sm' => 'text-sm gap-2',
+                    'base' => 'text-base gap-3',
+                    'lg' => 'text-lg gap-4',
+                    'xl' => 'text-xl gap-5',
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
@@ -258,7 +285,6 @@ return [
                 'options' => [
                     'gradient' => true,
                     'hover' => true,
-                    'safe' => '[&>*]:px-2 [&>*]:py-1 [&>*]:px-3 [&>*]:py-2 [&>*]:px-4 [&>*]:py-3 [&>*]:px-5 [&>*]:py-4 [&>*]:px-6 [&>*]:py-5'
                 ],
             ],
 
@@ -276,7 +302,7 @@ return [
 
             'card' => [
                 'base' => 'flex flex-col overflow-hidden',
-                'children' => [
+                'elements' => [
                     'header' => [
                         'base' => '',
                         'sizes' => [
@@ -394,7 +420,7 @@ return [
 
             'faq' => [
                 'base' => '[&_svg]:open:rotate-0',
-                'children' => [
+                'elements' => [
                     'answer' => [
                         'base' => 'bg-white/80 dark:bg-slate-800',
                         'sizes' => [
@@ -532,7 +558,7 @@ return [
 
             'input' => [
                 'base' => 'flex overflow-hidden focus-within:relative focus-within:z-10',
-                'children' => [
+                'elements' => [
                     'input' => [
                         'base' => 'bg-white dark:bg-slate-900 w-full border-0 focus:border-inherit focus:ring-0',
                         'sizes' => [
@@ -843,7 +869,7 @@ return [
 
             'modal' => [
                 'base' => '',
-                'children' => [
+                'elements' => [
                     'backdrop' => [
                         'base' => 'hidden bg-slate-700/80 p-10 fixed top-0 left-0 w-full h-full justify-center items-center z-50',
                     ],
@@ -869,7 +895,7 @@ return [
 
             'navbar' => [
                 'base' => 'p-5',
-                'children' => [
+                'elements' => [
                     'brand' => [
                         'base' => 'flex justify-between items-center w-full',
                     ],
@@ -907,13 +933,45 @@ return [
             ],
 
             'nav-link' => [
-                'base' => 'inline-flex w-full justify-start items-center text-center whitespace-nowrap cursor-pointer md:mb-0',
+                'base' => 'inline-flex justify-start items-center text-center whitespace-nowrap overflow-hidden md:mb-0',
+                'elements' => [
+                    'content' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => 'px-2 py-1',
+                            'sm' => 'px-3 py-2',
+                            'base' => 'px-4 py-3',
+                            'lg' => 'px-5 py-4',
+                            'xl' => 'px-6 py-5',
+                        ],
+                    ],
+                    'prefix' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => 'px-2 py-1',
+                            'sm' => 'px-3 py-2',
+                            'base' => 'px-4 py-3',
+                            'lg' => 'px-5 py-4',
+                            'xl' => 'px-6 py-5',
+                        ],
+                    ],
+                    'suffix' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => 'px-2 py-1',
+                            'sm' => 'px-3 py-2',
+                            'base' => 'px-4 py-3',
+                            'lg' => 'px-5 py-4',
+                            'xl' => 'px-6 py-5',
+                        ],
+                    ],
+                ],
                 'sizes' => [
-                    'xs' => 'text-xs px-2 py-1 gap-1 mb-3',
-                    'sm' => 'text-sm px-3 py-2 gap-2 mb-4',
-                    'base' => 'text-base px-4 py-3 gap-2 mb-5',
-                    'lg' => 'text-lg px-5 py-4 gap-3 mb-6',
-                    'xl' => 'text-xl px-6 py-5 gap-4 mb-8',
+                    'xs' => 'text-xs gap-1 mb-3',
+                    'sm' => 'text-sm gap-2 mb-4',
+                    'base' => 'text-base gap-3 mb-5',
+                    'lg' => 'text-lg gap-4 mb-6',
+                    'xl' => 'text-xl gap-5 mb-8',
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
@@ -927,13 +985,12 @@ return [
                 'options' => [
                     'gradient' => true,
                     'hover' => true,
-                    'safe' => '[&>*]:px-2 [&>*]:py-1 [&>*]:px-3 [&>*]:py-2 [&>*]:px-4 [&>*]:py-3 [&>*]:px-5 [&>*]:py-4 [&>*]:px-6 [&>*]:py-5'
                 ],
             ],
 
             'progress' => [
                 'base' => '',
-                'children' => [
+                'elements' => [
                     'bar' => [
                         'base' => 'bg-white dark:bg-slate-800',
                     ],
@@ -991,7 +1048,7 @@ return [
 
             'select' => [
                 'base' => 'flex overflow-hidden',
-                'children' => [
+                'elements' => [
                     'prefix' => [
                         'base' => 'flex items-center',
                         'sizes' => [
@@ -1066,7 +1123,7 @@ return [
 
             'stat' => [
                 'base' => 'relative flex flex-col gap-3 overflow-hidden',
-                'children' => [
+                'elements' => [
                     'description' => [
                         'base' => '',
                         'sizes' => [
@@ -1127,7 +1184,7 @@ return [
 
             'switcher' => [
                 'base' => 'flex items-center flex-shrink-0 peer-checked:bg-emerald-400 after:bg-white after:dark:bg-slate-800 after:duration-300 ease-in-out cursor-pointer peer-disabled:bg-slate-100',
-                'children' => [
+                'elements' => [
                     'input' => [
                         'base' => 'hidden peer',
                     ],
@@ -1152,7 +1209,7 @@ return [
 
             'table' => [
                 'base' => 'overflow-x-auto text-left w-full',
-                'children' => [
+                'elements' => [
                     'tbody' => [
                         'base' => 'bg-white/80 dark:bg-slate-800',
                         'sizes' => [
@@ -1262,7 +1319,7 @@ return [
 
             'textarea' => [
                 'base' => '',
-                'children' => [
+                'elements' => [
                     'footer' => [
                         'base' => '',
                         'sizes' => [
@@ -1322,25 +1379,35 @@ return [
 
             'theme-switcher' => [
                 'base' => '',
-                'children' => [
+                'elements' => [
                     'list-group' => [
-                        'base' => 'px-0 py-0.5 gap-0',
+                        'base' => 'px-0 py-0.5 gap-0 border-none',
                     ],
                     'light-button' => [
-                        'base' => 'text-left',
+                        'base' => 'text-left border-none',
                     ],
                     'dark-button' => [
-                        'base' => 'text-left',
+                        'base' => 'text-left border-none',
+                    ],
+                    'switch-button' => [
+                        'base' => 'border-none',
+                        'sizes' => [
+                            'xs' => 'px-2 py-1',
+                            'sm' => 'px-3 py-2',
+                            'base' => 'px-4 py-3',
+                            'lg' => 'px-5 py-4',
+                            'xl' => 'px-6 py-5',
+                        ],
                     ],
                     'system-button' => [
-                        'base' => 'text-left',
+                        'base' => 'text-left border-none',
                     ],
                 ],
             ],
 
             'toast' => [
                 'base' => 'fixed top-5 right-5',
-                'children' => [
+                'elements' => [
                     'content' => [
                         'base' => 'flex flex-col flex-1 gap-1',
                     ],

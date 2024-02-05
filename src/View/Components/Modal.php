@@ -33,7 +33,7 @@ class Modal extends Component
 
         $this->classes = $classes;
 
-        $childrenClasses = $turbine->childrenClasses(
+        $elementClasses = $turbine->elementClasses(
             'modal',
             [
                 'backdrop',
@@ -44,7 +44,7 @@ class Modal extends Component
             $size,
         );
 
-        foreach ($childrenClasses as $key => $value) {
+        foreach ($elementClasses as $key => $value) {
             $this->$key = $value;
         }
     }

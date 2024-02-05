@@ -25,7 +25,7 @@ class Burger extends Component
 
         $this->classes = $classes;
 
-        $childrenClasses = $turbine->childrenClasses(
+        $elementClasses = $turbine->elementClasses(
             'burger',
             [
                 'bar',
@@ -33,7 +33,7 @@ class Burger extends Component
             null,
         );
 
-        foreach ($childrenClasses as $key => $value) {
+        foreach ($elementClasses as $key => $value) {
             $this->$key = $value;
         }
     }

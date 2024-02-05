@@ -46,7 +46,7 @@ class Toast extends Component
 
         $this->classes = $classes;
 
-        $childrenClasses = $turbine->childrenClasses(
+        $elementClasses = $turbine->elementClasses(
             'toast',
             [
                 'content',
@@ -58,7 +58,7 @@ class Toast extends Component
             $size,
         );
 
-        foreach ($childrenClasses as $key => $value) {
+        foreach ($elementClasses as $key => $value) {
             $this->$key = $value;
         }
     }

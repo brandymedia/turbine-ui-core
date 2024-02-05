@@ -10,6 +10,7 @@ class ThemeSwitcher extends Component
     public function __construct(
         private Turbine $turbine,
         public ?string $classes = null,
+        public ?string $size = null,
         public ?string $theme = null,
         public ?string $variant = null,
         public $darkButtonClasses = null,
@@ -21,13 +22,15 @@ class ThemeSwitcher extends Component
         $classes = $turbine->classBuilder(
             'theme-switcher',
             $variant,
-            [],
+            [
+                'size' => $size,
+            ],
             $theme,
         );
 
         $this->classes = $classes;
-        
-        $childrenClasses = $turbine->childrenClasses(
+
+        $elementClasses = $turbine->elementClasses(
             'theme-switcher',
             [
                 'darkButton',
@@ -39,7 +42,7 @@ class ThemeSwitcher extends Component
             null
         );
 
-        foreach ($childrenClasses as $key => $value) {
+        foreach ($elementClasses as $key => $value) {
             $this->$key = $value;
         }
     }
