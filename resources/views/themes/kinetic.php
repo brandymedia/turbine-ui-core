@@ -581,6 +581,9 @@ return [
             'input' => [
                 'base' => 'flex overflow-hidden focus-within:relative focus-within:z-10',
                 'elements' => [
+                    'hint' => [
+                        'base' => 'text-right text-slate-400',
+                    ],
                     'input' => [
                         'base' => 'bg-white dark:bg-slate-900 w-full border-0 focus:border-inherit focus:ring-0',
                         'sizes' => [
@@ -592,7 +595,7 @@ return [
                         ],
                     ],
                     'input-checkbox' => [
-                        'base' => 'inline-block mb-0 border-red-500',
+                        'base' => 'inline-block mb-0',
                         'sizes' => [
                             'xs' => '',
                             'sm' => '',
@@ -682,7 +685,7 @@ return [
                         ],
                     ],
                     'label' => [
-                        'base' => '',
+                        'base' => 'flex justify-between',
                         'sizes' => [
                             'xs' => '',
                             'sm' => '',
@@ -782,6 +785,14 @@ return [
 
             'label' => [
                 'base' => 'flex items-center mb-1',
+                'elements' => [
+                    'content' => [
+                        'base' => 'w-full flex justify-between',
+                    ],
+                    'hint' => [
+                        'base' => 'text-right text-slate-400',
+                    ],
+                ],
                 'sizes' => [
                     'xs' => 'text-xs mb-1 gap-0.5',
                     'sm' => 'text-sm mb-1 gap-1',

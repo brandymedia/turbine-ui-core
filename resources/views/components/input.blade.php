@@ -64,7 +64,7 @@ if ($combine) {
 @else
     @if ($label)
     <div {{ $attributes->twMergeFor('input-wrapper', 'tui-input-wrapper '.$inputWrapperClasses) }}>
-        <x-turbine-ui-label for="{{ $attributes['name'] }}" variant="{{ $variant }}" {{ $attributes->twMergeFor('label', 'tui-label '.$labelClasses) }}>{{ $label }}</x-turbine-ui-label>
+        <x-turbine-ui-label for="{{ $attributes['name'] }}" variant="{{ $variant }}" {{ $attributes->twMergeFor('label', 'tui-label '.$labelClasses) }}>{{ $label }}<span {{ $attributes->twMergeFor('hint', 'tui-hint '.$hintClasses) }}>{{ $hint }}</span></x-turbine-ui-label>
     @endif
         <div {{ $attributes->only('class')->twMerge(['class' => $classes]) }}>
             @if ($prefix)

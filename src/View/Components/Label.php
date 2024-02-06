@@ -12,6 +12,7 @@ class Label extends Component
         public ?string $accent = null,
         public ?string $border = null,
         public ?string $classes = null,
+        public ?string $hint = null,
         public ?string $hollow = null,
         public ?string $icon = null,
         public ?string $prefix = null,
@@ -23,6 +24,7 @@ class Label extends Component
         public ?string $theme = null,
         public ?string $variant = null,
         public ?string $contentClasses = null,
+        public ?string $hintClasses = null,
         public ?string $iconClasses = null,
         public ?string $prefixClasses = null,
         public ?string $suffixClasses = null,
@@ -51,6 +53,7 @@ class Label extends Component
             'label',
             [
                 'content',
+                'hint',
                 'icon',
                 'prefix',
                 'suffix',

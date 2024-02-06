@@ -232,7 +232,7 @@ class Turbine
     private function variantClasses($component, $variant, $attributes)
     {
         $hasVariant = $this->theme['design']['variants'][$variant] ?? null;
-        $localVariant = $this->localVariant($variant) ?? null;
+        $localVariant = $this->localVariant($variant ?? 'default') ?? null;
         $hasVariant ? $variantName = $variant : $variantName = 'default';
         $hasHollow = $attributes['hollow'] ?? null;
         $hasHover = $this->theme['design']['components'][$component]['options']['hover'] ?? null;

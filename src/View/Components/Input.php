@@ -15,6 +15,7 @@ class Input extends Component
         public ?string $classes = null,
         public ?string $divide = null,
         public ?string $full = null,
+        public ?string $hint = null,
         public ?string $hollow = null,
         public ?string $label = null,
         public ?string $prefix = null,
@@ -26,6 +27,7 @@ class Input extends Component
         public ?string $theme = null,
         public ?string $type = null,
         public ?string $variant = null,
+        public ?string $hintClasses = null,
         public ?string $inputClasses = null,
         public ?string $inputWrapperClasses = null,
         public ?string $inputCheckboxClasses = null,
@@ -67,6 +69,7 @@ class Input extends Component
         $elementClasses = $turbine->elementClasses(
             'input',
             [
+                'hint',
                 'input',
                 'inputWrapper',
                 'inputCheckbox',

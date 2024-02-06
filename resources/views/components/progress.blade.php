@@ -4,7 +4,7 @@
 <div {{ $attributes->twMergeFor('progress-wrapper', 'tui-progress-wrapper '.$progressWrapperClasses) }}>
     <div {{ $attributes->twMergeFor('text-wrapper', 'tui-text-wrapper '.$textWrapperClasses) }}>
         @if ($label)
-            <x-turbine-ui-label for="{{ $attributes['id'] }}" variant="{{ $variant }}" {{ $attributes->twMergeFor('label', 'tui-label '.$labelClasses) }}>{{ $label }}</x-turbine-ui-label>
+            <x-turbine-ui-label variant="{{ $variant }}" {{ $attributes->twMergeFor('label', 'tui-label '.$labelClasses) }}>{{ $label }}</x-turbine-ui-label>
         @endif
         <span {{ $attributes->twMergeFor('percentage', 'tui-percentage '.$percentageClasses) }}>{{ $percentage ? $percentage : 0 }}%</span>
     </div>

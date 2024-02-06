@@ -28,7 +28,7 @@ In the 'content' section, add **./vendor/brandymedia/turbine-ui-core/**/*.php** 
 
 ```
 content: [
-    '...'
+    '...',
     './vendor/brandymedia/turbine-ui-core/**/*.php',
 ],
 ```
@@ -84,7 +84,7 @@ In the 'content' section, add **./resources/views/**/*.php** as a new line:
 
 ```
 content: [
-    '...'
+    '...',
     './resources/views/**/*.php',
 ],
 ```
@@ -110,7 +110,7 @@ In the 'content' section, add **./resources/views/**/*.php** as a new line:
 
 ```
 content: [
-    '...'
+    '...',
     './resources/views/**/*.php',
 ],
 ```
