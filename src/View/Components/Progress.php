@@ -13,14 +13,20 @@ class Progress extends Component
         public ?string $border = null,
         public ?string $classes = null,
         public ?string $gradient = null,
+        public ?string $label = null,
         public ?string $percentage = null,
         public ?string $ring = null,
         public ?string $rounded = null,
         public ?string $shadow = null,
         public ?string $size = null,
         public ?string $theme = null,
-        public ?string $title = null,
         public ?string $variant = null,
+        public ?string $barClasses = null,
+        public ?string $labelClasses = null,
+        public ?string $percentageClasses = null,
+        public ?string $progressClasses = null,
+        public ?string $progressWrapperClasses = null,
+        public ?string $textWrapperClasses = null,
     ) {
         $classes = $turbine->classBuilder(
             'progress',
@@ -38,6 +44,23 @@ class Progress extends Component
         );
 
         $this->classes = $classes;
+
+        $elementClasses = $turbine->elementClasses(
+            'progress',
+            [
+                'bar',
+                'label',
+                'percentage',
+                'progress',
+                'progressWrapper',
+                'textWrapper',
+            ],
+            $size,
+        );
+
+        foreach ($elementClasses as $key => $value) {
+            $this->$key = $value;
+        }
     }
 
     public function render()

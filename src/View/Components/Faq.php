@@ -5,27 +5,34 @@ namespace Brandymedia\TurbineUiCore\View\Components;
 use Illuminate\View\Component;
 use Brandymedia\TurbineUiCore\Turbine;
 
-class Modal extends Component
+class Faq extends Component
 {
     public function __construct(
         private Turbine $turbine,
+        public ?string $accent = null,
+        public ?string $border = null,
         public ?string $classes = null,
-        public ?bool $dismissible = null,
+        public ?string $hollow = null,
+        public ?string $ring = null,
+        public ?string $rounded = null,
+        public ?string $shadow = null,
         public ?string $size = null,
-        public ?string $target = null,
         public ?string $theme = null,
         public ?string $variant = null,
-        public ?string $backdropClasses = null,
-        public ?string $contentClasses = null,
-        public ?string $dismissButtonClasses = null,
-        public ?string $dismissIconClasses = null,
+        public ?string $answerClasses = null,
+        public ?string $expandIconClasses = null,
+        public ?string $questionClasses = null,
     ) {
-        $this->target = $target;
-
         $classes = $turbine->classBuilder(
-            'modal',
+            'faq',
             $variant,
             [
+                'accent' => $accent,
+                'border' => $border,
+                'hollow' => $hollow,
+                'ring' => $ring,
+                'rounded' => $rounded,
+                'shadow' => $shadow,
                 'size' => $size,
             ],
             $theme,
@@ -34,12 +41,11 @@ class Modal extends Component
         $this->classes = $classes;
 
         $elementClasses = $turbine->elementClasses(
-            'modal',
+            'faq',
             [
-                'backdrop',
-                'content',
-                'dismissButton',
-                'dismissIcon',
+                'answer',
+                'expandIcon',
+                'question',
             ],
             $size,
         );
@@ -51,6 +57,6 @@ class Modal extends Component
 
     public function render()
     {
-        return view('turbine-ui::components.modal');
+        return view('turbine-ui::components.faq');
     }
 }

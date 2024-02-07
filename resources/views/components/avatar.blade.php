@@ -1,6 +1,6 @@
 @if ($label)
     <div {{ $attributes->twMerge(['class' => $classes]) }}>
-        <div class="tui-label">
+        <div {{ $attributes->twMergeFor('label', 'tui-label '.$labelClasses) }}>
             {{ $label }}
         </div>
     </div>

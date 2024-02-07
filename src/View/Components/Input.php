@@ -15,6 +15,7 @@ class Input extends Component
         public ?string $classes = null,
         public ?string $divide = null,
         public ?string $full = null,
+        public ?string $hint = null,
         public ?string $hollow = null,
         public ?string $label = null,
         public ?string $prefix = null,
@@ -26,7 +27,21 @@ class Input extends Component
         public ?string $theme = null,
         public ?string $type = null,
         public ?string $variant = null,
-
+        public ?string $hintClasses = null,
+        public ?string $inputClasses = null,
+        public ?string $inputWrapperClasses = null,
+        public ?string $inputCheckboxClasses = null,
+        public ?string $inputCheckboxWrapperClasses = null,
+        public ?string $inputCheckboxLabelClasses = null,
+        public ?string $inputRadioClasses = null,
+        public ?string $inputRadioWrapperClasses = null,
+        public ?string $inputRadioLabelClasses = null,
+        public ?string $inputRangeClasses = null,
+        public ?string $inputRangeWrapperClasses = null,
+        public ?string $inputRangeLabelClasses = null,
+        public ?string $labelClasses = null,
+        public ?string $prefixClasses = null,
+        public ?string $suffixClasses = null,
     ) {
         $classes = $turbine->classBuilder(
             'input',
@@ -50,6 +65,32 @@ class Input extends Component
         );
 
         $this->classes = $classes;
+
+        $elementClasses = $turbine->elementClasses(
+            'input',
+            [
+                'hint',
+                'input',
+                'inputWrapper',
+                'inputCheckbox',
+                'inputCheckboxWrapper',
+                'inputCheckboxLabel',
+                'inputRange',
+                'inputRangeWrapper',
+                'inputRangeLabel',
+                'inputRadio',
+                'inputRadioWrapper',
+                'inputRadioLabel',
+                'label',
+                'prefix',
+                'suffix',
+            ],
+            $size,
+        );
+
+        foreach ($elementClasses as $key => $value) {
+            $this->$key = $value;
+        }
     }
 
     public function render()

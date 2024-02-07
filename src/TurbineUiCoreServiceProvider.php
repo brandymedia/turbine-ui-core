@@ -15,6 +15,7 @@ use Brandymedia\TurbineUiCore\View\Components\Code;
 use Brandymedia\TurbineUiCore\View\Components\Combine;
 use Brandymedia\TurbineUiCore\View\Components\Container;
 use Brandymedia\TurbineUiCore\View\Components\Dropdown;
+use Brandymedia\TurbineUiCore\View\Components\Faq;
 use Brandymedia\TurbineUiCore\View\Components\Grid;
 use Brandymedia\TurbineUiCore\View\Components\Heading;
 use Brandymedia\TurbineUiCore\View\Components\Input;
@@ -36,6 +37,7 @@ use Brandymedia\TurbineUiCore\View\Components\Switcher;
 use Brandymedia\TurbineUiCore\View\Components\Table;
 use Brandymedia\TurbineUiCore\View\Components\Text;
 use Brandymedia\TurbineUiCore\View\Components\Textarea;
+use Brandymedia\TurbineUiCore\View\Components\ThemeSwitcher;
 use Brandymedia\TurbineUiCore\View\Components\Toast;
 use Brandymedia\TurbineUiCore\Console\CreateVariant;
 
@@ -61,6 +63,7 @@ class TurbineUiCoreServiceProvider extends ServiceProvider
             Combine::class,
             Container::class,
             Dropdown::class,
+            Faq::class,
             Grid::class,
             Heading::class,
             Input::class,
@@ -82,6 +85,7 @@ class TurbineUiCoreServiceProvider extends ServiceProvider
             Table::class,
             Text::class,
             Textarea::class,
+            ThemeSwitcher::class,
             Toast::class,
         ];
 

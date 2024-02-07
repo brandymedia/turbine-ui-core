@@ -20,6 +20,9 @@ class Card extends Component
         public ?string $size = null,
         public ?string $theme = null,
         public ?string $variant = null,
+        public ?string $bodyClasses = null,
+        public ?string $footerClasses = null,
+        public ?string $headerClasses = null,
     ) {
         $classes = $turbine->classBuilder(
             'card',
@@ -38,6 +41,20 @@ class Card extends Component
         );
 
         $this->classes = $classes;
+
+        $elementClasses = $turbine->elementClasses(
+            'card',
+            [
+                'body',
+                'footer',
+                'header',
+            ],
+            $size,
+        );
+
+        foreach ($elementClasses as $key => $value) {
+            $this->$key = $value;
+        }
     }
 
     public function render()

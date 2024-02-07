@@ -1,5 +1,5 @@
-<label class="flex justify-between items-center gap-5">    
+<label {{ $attributes->twMergeFor('label', 'tui-label '.$labelClasses) }}>    
     {{ $label }} 
-    <input type="checkbox" class="hidden peer" {{ $attributes->except('class') }} />
+    <input type="checkbox" {{ $attributes->withoutTwMergeClasses()->twMergeFor('input', 'tui-input '.$inputClasses) }} {{ $attributes->except('class') }} />
     <span {{ $attributes->only('class')->twMerge(['class' => $classes]) }}></span>
 </label>

@@ -23,6 +23,11 @@ class Select extends Component
         public ?string $suffix = null,
         public ?string $theme = null,
         public ?string $variant = null,
+        public ?string $labelClasses = null,
+        public ?string $prefixClasses = null,
+        public ?string $selectClasses = null,
+        public ?string $selectWrapperClasses = null,
+        public ?string $suffixClasses = null,
     ) {
         $classes = $turbine->classBuilder(
             'select',
@@ -44,6 +49,22 @@ class Select extends Component
         );
 
         $this->classes = $classes;
+
+        $elementClasses = $turbine->elementClasses(
+            'select',
+            [
+                'label',
+                'prefix',
+                'select',
+                'selectWrapper',
+                'suffix',
+            ],
+            $size,
+        );
+
+        foreach ($elementClasses as $key => $value) {
+            $this->$key = $value;
+        }
     }
 
     public function render()

@@ -1,9 +1,9 @@
 <a href="{{ $href }}" {{ $attributes->twMerge(['class' => $classes]) }}>
     @isset($prefix)
-        <span class="tui-prefix">{!! $prefix !!}</span>
+        <span {{ $attributes->twMergeFor('prefix', 'tui-prefix '.$prefixClasses) }}>{!! $prefix !!}</span>
     @endisset
-    <span class="tui-content">{{ $slot }}</span>
+        <span {{ $attributes->twMergeFor('content', 'tui-content '.$contentClasses) }}>{{ $slot }}</span>
     @isset($suffix)
-        <span class="tui-suffix">{!! $suffix !!}</span>
+        <span {{ $attributes->twMergeFor('suffix', 'tui-suffix '.$suffixClasses) }}>{!! $suffix !!}</span>
     @endisset
 </a>

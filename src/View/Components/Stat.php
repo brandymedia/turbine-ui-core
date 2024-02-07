@@ -21,6 +21,10 @@ class Stat extends Component
         public ?string $size = null,
         public ?string $theme = null,
         public ?string $variant = null,
+        public ?string $descriptionClasses = null,
+        public ?string $iconClasses = null,
+        public ?string $titleClasses = null,
+        public ?string $valueClasses = null,
     ) {
         $classes = $turbine->classBuilder(
             'stat',
@@ -39,6 +43,21 @@ class Stat extends Component
         );
 
         $this->classes = $classes;
+
+        $elementClasses = $turbine->elementClasses(
+            'stat',
+            [
+                'description',
+                'icon',
+                'title',
+                'value',
+            ],
+            $size,
+        );
+
+        foreach ($elementClasses as $key => $value) {
+            $this->$key = $value;
+        }
     }
 
     public function render()

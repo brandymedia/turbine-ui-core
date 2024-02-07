@@ -21,7 +21,7 @@ class Avatar extends Component
         public ?string $size = null,
         public ?string $theme = null,
         public ?string $variant = null,
-
+        public ?string $labelClasses = null,
     ) {
         $classes = $turbine->classBuilder(
             'avatar',
@@ -38,6 +38,18 @@ class Avatar extends Component
         );
 
         $this->classes = $classes;
+
+        $elementClasses = $turbine->elementClasses(
+            'avatar',
+            [
+                'label',
+            ],
+            $size,
+        );
+
+        foreach ($elementClasses as $key => $value) {
+            $this->$key = $value;
+        }
     }
 
     public function render()

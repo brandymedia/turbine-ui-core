@@ -20,7 +20,10 @@ class Media extends Component
         public ?string $size = null,
         public ?string $theme = null,
         public ?string $variant = null,
-
+        public ?string $bodyClasses = null,
+        public ?string $thumbnailClasses = null,
+        public ?string $titleClasses = null,
+        public ?string $descriptionClasses = null,
     ) {
         $classes = $turbine->classBuilder(
             'media',
@@ -39,6 +42,21 @@ class Media extends Component
         );
 
         $this->classes = $classes;
+
+        $elementClasses = $turbine->elementClasses(
+            'media',
+            [
+                'body',
+                'thumbnail',
+                'title',
+                'description',
+            ],
+            $size,
+        );
+
+        foreach ($elementClasses as $key => $value) {
+            $this->$key = $value;
+        }
     }
 
     public function render()

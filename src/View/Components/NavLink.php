@@ -27,6 +27,9 @@ class NavLink extends Component
         public ?string $suffix = null,
         public ?string $theme = null,
         public ?string $variant = null,
+        public ?string $contentClasses = null,
+        public ?string $prefixClasses = null,
+        public ?string $suffixClasses = null,
     ) {
         $classes = $turbine->classBuilder(
             'nav-link',
@@ -49,6 +52,34 @@ class NavLink extends Component
         );
 
         $this->classes = $classes;
+
+        $elementClasses = $turbine->elementClasses(
+            'nav-link',
+            [
+                'content',
+                'prefix',
+                'suffix',
+            ],
+            $size,
+        );
+
+        if (!$divide) {
+            if (isset($prefix)) {
+                $elementClasses['contentClasses'] .= ' pl-0';
+                $elementClasses['prefixClasses'] .= ' pr-0';
+            }
+
+            if (isset($suffix)) {
+                $elementClasses['contentClasses'] .= ' pr-0';
+                $elementClasses['suffixClasses'] .= ' pl-0';
+            }
+        } else {
+            $this->classes .= ' gap-0';
+        }
+
+        foreach ($elementClasses as $key => $value) {
+            $this->$key = $value;
+        }
     }
 
     public function render()

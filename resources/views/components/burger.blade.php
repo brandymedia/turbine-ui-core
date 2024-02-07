@@ -1,5 +1,5 @@
-<div {{ $attributes->twMerge(['class' => $classes['base']]) }}>
-    <div class="turbine-ui-bar {{ $classes['background'] }}"></div>
-    <div class="turbine-ui-bar {{ $classes['background'] }}"></div>
-    <div class="turbine-ui-bar {{ $classes['background'] }}"></div>
+<div {{ $attributes->twMerge(['class' => 'tui-burger '.$classes['base']]) }}>
+    <div {{ $attributes->twMergeFor('bar', 'tui-bar '.$barClasses.' '.$classes['background']) }}></div>
+    <div {{ $attributes->twMergeFor('bar', 'tui-bar '.$barClasses.' '.$classes['background']) }}></div>
+    <div {{ $attributes->twMergeFor('bar', 'tui-bar '.$barClasses.' '.$classes['background']) }}"></div>
 </div>
