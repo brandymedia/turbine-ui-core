@@ -5,7 +5,7 @@ namespace Brandymedia\TurbineUiCore\View\Components;
 use Illuminate\View\Component;
 use Brandymedia\TurbineUiCore\Turbine;
 
-class Switcher extends Component
+class Toggle extends Component
 {
     public function __construct(
         private Turbine $turbine,
@@ -22,7 +22,7 @@ class Switcher extends Component
         public ?string $labelClasses = null,
     ) {
         $classes = $turbine->classBuilder(
-            'switcher',
+            'toggle',
             $variant,
             [
                 'size' => $size,
@@ -38,7 +38,7 @@ class Switcher extends Component
         $this->classes = $classes;
 
         $elementClasses = $turbine->elementClasses(
-            'switcher',
+            'toggle',
             [
                 'input',
                 'label',
@@ -53,6 +53,6 @@ class Switcher extends Component
 
     public function render()
     {
-        return view('turbine-ui::components.switcher');
+        return view('turbine-ui::components.toggle');
     }
 }

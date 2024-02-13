@@ -12,5 +12,6 @@ return [
         'active' => '',
         'gradient' => '',
         'divide' => '',
+        'accent' => '',
     ]
 ];

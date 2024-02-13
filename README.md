@@ -6,7 +6,7 @@ Turbine UI is a Laravel Blade & Tailwind CSS UI component library that helps you
 
 ## Download
 
-Turbine UI Core is free and can be downloaded via composer:
+Turbine UI is free and can be downloaded via composer:
 
 ```
 composer require brandymedia/turbine-ui-core
@@ -22,7 +22,7 @@ composer require brandymedia/turbine-ui-core
 
 ### Tailwind CSS Setup
 
-Once installed you'll need to update your **tailwind.config.js** file.
+Once you've installed Turbine UI you'll need to update your **tailwind.config.js** file.
 
 In the 'content' section, add **./vendor/brandymedia/turbine-ui-core/**/*.php** as a new line:
 
@@ -58,7 +58,7 @@ npm run build
 
 ### Themes
 
-Turbine UI Core comes with 1 theme by default with further themes available with Turbine UI Pro:
+Turbine UI comes with 2 themes by default with further themes in development:
 
 - Kinetic (default)
 - Primal (Pro)

@@ -12,7 +12,6 @@ use Brandymedia\TurbineUiCore\View\Components\Button;
 use Brandymedia\TurbineUiCore\View\Components\ButtonGroup;
 use Brandymedia\TurbineUiCore\View\Components\Card;
 use Brandymedia\TurbineUiCore\View\Components\Code;
-use Brandymedia\TurbineUiCore\View\Components\Combine;
 use Brandymedia\TurbineUiCore\View\Components\Container;
 use Brandymedia\TurbineUiCore\View\Components\Dropdown;
 use Brandymedia\TurbineUiCore\View\Components\Faq;
@@ -39,6 +38,7 @@ use Brandymedia\TurbineUiCore\View\Components\Text;
 use Brandymedia\TurbineUiCore\View\Components\Textarea;
 use Brandymedia\TurbineUiCore\View\Components\ThemeSwitcher;
 use Brandymedia\TurbineUiCore\View\Components\Toast;
+use Brandymedia\TurbineUiCore\View\Components\Toggle;
 use Brandymedia\TurbineUiCore\Console\CreateVariant;
 
 class TurbineUiCoreServiceProvider extends ServiceProvider
@@ -60,7 +60,6 @@ class TurbineUiCoreServiceProvider extends ServiceProvider
             ButtonGroup::class,
             Card::class,
             Code::class,
-            Combine::class,
             Container::class,
             Dropdown::class,
             Faq::class,
@@ -81,12 +80,12 @@ class TurbineUiCoreServiceProvider extends ServiceProvider
             Select::class,
             Sidebar::class,
             Stat::class,
-            Switcher::class,
             Table::class,
             Text::class,
             Textarea::class,
             ThemeSwitcher::class,
             Toast::class,
+            Toggle::class,
         ];
 
         $this->loadViewComponentsAs('turbine-ui', $viewComponents);

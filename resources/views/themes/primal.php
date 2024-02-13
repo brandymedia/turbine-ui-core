@@ -16,7 +16,7 @@ return [
                 'text' => 'text-slate-600 dark:text-slate-400',
                 'border' => 'border-slate-600 dark:border-slate-400',
                 'shadow' => 'shadow-slate-600/100 dark:shadow-slate-700/100',
-                'ring' => 'ring-slate-200 dark:ring-slate-700 ring-offset-slate-100 dark:ring-offset-slate-800',
+                'ring' => 'ring-slate-200 dark:ring-slate-700 ring-offt-slate-100 dark:ring-offset-slate-800',
                 'hover' => 'hover:bg-slate-100 hover:from-slate-200 hover:to-slate-400 hover:dark:bg-slate-800 hover:from:dark:bg-slate-400 dark:hover:to-slate-600',
                 'focus' => 'focus-within:border-slate-600 focus-within:border-8',
                 'active' => 'bg-slate-100 from-slate-200 to-slate-400 dark:bg-slate-800 from:dark:bg-slate-400 dark:to-slate-600',
@@ -1073,11 +1073,11 @@ return [
                     'select' => [
                         'base' => 'bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-50 w-full border-0 focus:border-inherit focus:ring-0',
                         'sizes' => [
-                            'xs' => 'text-xs placeholder:text-xs p-1',
-                            'sm' => 'text-sm placeholder:text-sm p-2',
-                            'base' => 'text-base placeholder:text-base p-3',
-                            'lg' => 'text-lg placeholder:text-lg p-4',
-                            'xl' => 'text-xl placeholder:text-xl p-5',
+                            'xs' => 'text-xs placeholder:text-xs pl-1 py-1',
+                            'sm' => 'text-sm placeholder:text-sm pl-2 py-2',
+                            'base' => 'text-base placeholder:text-base pl-3 py-3',
+                            'lg' => 'text-lg placeholder:text-lg pl-4 py-4',
+                            'xl' => 'text-xl placeholder:text-xl pl-5 py-5',
                         ],
                     ],
                     'suffix' => [
@@ -1193,7 +1193,7 @@ return [
                 ],
             ],
 
-            'switcher' => [
+            'toggle' => [
                 'base' => 'flex items-center flex-shrink-0 peer-checked:bg-emerald-400 after:bg-white after:dark:bg-slate-800 after:duration-300 ease-in-out cursor-pointer peer-disabled:bg-slate-100',
                 'elements' => [
                     'input' => [

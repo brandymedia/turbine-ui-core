@@ -1,9 +1,5 @@
-@aware(['combine'])
-
 @php
-if ($combine) {
-    $classes = $classes . ' m-0 border-none rounded-none';
-}
+$base = $attributes->only('class')->withoutTwMergeClasses()->twMerge(['class' => $classes]);
 @endphp
 
 @if($type === 'range')
@@ -66,7 +62,7 @@ if ($combine) {
     <div {{ $attributes->twMergeFor('input-wrapper', 'tui-input-wrapper '.$inputWrapperClasses) }}>
         <x-turbine-ui-label for="{{ $attributes['name'] }}" variant="{{ $variant }}" {{ $attributes->twMergeFor('label', 'tui-label '.$labelClasses) }}>{{ $label }}<span {{ $attributes->twMergeFor('hint', 'tui-hint '.$hintClasses) }}>{{ $hint }}</span></x-turbine-ui-label>
     @endif
-        <div {{ $attributes->only('class')->twMerge(['class' => $classes]) }}>
+        <div {{ $base }}>
             @if ($prefix)
                 <div {{ $attributes->twMergeFor('prefix', 'tui-prefix '.$prefixClasses) }}>{!! $prefix !!}</i></div>
             @endif

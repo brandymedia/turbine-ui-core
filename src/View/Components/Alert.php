@@ -13,7 +13,6 @@ class Alert extends Component
         public ?string $border = null,
         public ?string $classes = null,
         public ?bool $dismissible = null,
-        public ?bool $full = null,
         public ?string $hollow = null,
         public ?string $icon = null,
         public ?string $ring = null,

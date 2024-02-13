@@ -158,7 +158,7 @@ return [
                         ],
                     ],
                     'dismiss-icon' => [
-                        'base' => 'fill-current text-inherit opacity-75',
+                        'base' => 'fill-current text-inherit hover:opacity-75 ease-in-out duration-300',
                         'sizes' => [
                             'xs' => 'w-2',
                             'sm' => 'w-3',
@@ -371,21 +371,6 @@ return [
                     'border' => 'border-2',
                     'ring' => [false, 'ring-2 ring-offset-2'],
                     'rounded' => 'rounded',
-                    'shadow' => [false, 'shadow-md'],
-                ],
-            ],
-
-            'combine' => [
-                // 'base' => 'flex [&_*]:mb-0 [&_*:first-child]:rounded-tr-none [&_*:first-child]:rounded-br-none [&_*:first-child]:border-r-0 [&>*:last-child]:rounded-tl-none [&>*:last-child]:rounded-bl-none [&>*:last-child]:border-l-0',
-                // 'base' => 'flex gap-0.5 [&_*]:m-0 [&_*]:rounded-none',
-                'base' => 'flex overflow-hidden',
-                'attributes' => [
-                    'accent' => [false, 'border-l-8'],
-                    'border' => 'border-2',
-                    'divide' => [false, 'divide-x-2'],
-                    'full' => [false, 'w-full'],
-                    'ring' => [false, 'ring-2 ring-offset-2'],
-                    'rounded' => 'rounded-lg',
                     'shadow' => [false, 'shadow-md'],
                 ],
             ],
@@ -1079,6 +1064,9 @@ return [
             'select' => [
                 'base' => 'flex overflow-hidden',
                 'elements' => [
+                    'hint' => [
+                        'base' => 'text-right text-slate-400',
+                    ],
                     'prefix' => [
                         'base' => 'flex items-center',
                         'sizes' => [
@@ -1092,11 +1080,11 @@ return [
                     'select' => [
                         'base' => 'bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-50 w-full border-0 focus:border-inherit focus:ring-0',
                         'sizes' => [
-                            'xs' => 'text-xs placeholder:text-xs p-1',
-                            'sm' => 'text-sm placeholder:text-sm p-2',
-                            'base' => 'text-base placeholder:text-base p-3',
-                            'lg' => 'text-lg placeholder:text-lg p-4',
-                            'xl' => 'text-xl placeholder:text-xl p-5',
+                            'xs' => 'text-xs placeholder:text-xs pl-1 py-1',
+                            'sm' => 'text-sm placeholder:text-sm pl-2 py-2',
+                            'base' => 'text-base placeholder:text-base pl-3 py-3',
+                            'lg' => 'text-lg placeholder:text-lg pl-4 py-4',
+                            'xl' => 'text-xl placeholder:text-xl pl-5 py-5',
                         ],
                     ],
                     'suffix' => [
@@ -1212,7 +1200,7 @@ return [
                 ],
             ],
 
-            'switcher' => [
+            'toggle' => [
                 'base' => 'flex items-center flex-shrink-0 peer-checked:bg-emerald-400 after:bg-white after:dark:bg-slate-800 after:duration-300 ease-in-out cursor-pointer peer-disabled:bg-slate-100',
                 'elements' => [
                     'input' => [

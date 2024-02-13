@@ -13,6 +13,7 @@ class Select extends Component
         public ?string $border = null,
         public ?string $classes = null,
         public ?string $divide = null,
+        public ?string $hint = null,
         public ?string $hollow = null,
         public ?string $label = null,
         public ?string $prefix = null,
@@ -23,6 +24,7 @@ class Select extends Component
         public ?string $suffix = null,
         public ?string $theme = null,
         public ?string $variant = null,
+        public ?string $hintClasses = null,
         public ?string $labelClasses = null,
         public ?string $prefixClasses = null,
         public ?string $selectClasses = null,
@@ -53,6 +55,7 @@ class Select extends Component
         $elementClasses = $turbine->elementClasses(
             'select',
             [
+                'hint',
                 'label',
                 'prefix',
                 'select',
