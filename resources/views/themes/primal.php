@@ -561,6 +561,13 @@ return [
                 'elements' => [
                     'hint' => [
                         'base' => 'text-right text-slate-400',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
                     ],
                     'input' => [
                         'base' => 'bg-white dark:bg-slate-900 w-full border-0 focus:border-inherit focus:ring-0',

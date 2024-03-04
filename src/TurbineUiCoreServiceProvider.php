@@ -32,7 +32,6 @@ use Brandymedia\TurbineUiCore\View\Components\Section;
 use Brandymedia\TurbineUiCore\View\Components\Select;
 use Brandymedia\TurbineUiCore\View\Components\Sidebar;
 use Brandymedia\TurbineUiCore\View\Components\Stat;
-use Brandymedia\TurbineUiCore\View\Components\Switcher;
 use Brandymedia\TurbineUiCore\View\Components\Table;
 use Brandymedia\TurbineUiCore\View\Components\Text;
 use Brandymedia\TurbineUiCore\View\Components\Textarea;
@@ -95,6 +94,9 @@ class TurbineUiCoreServiceProvider extends ServiceProvider
             $this->publishes([
                 __DIR__.'/../resources/views/themes/' => $this->app->resourcePath('views/vendor/turbine-ui/themes')
             ], 'turbine-ui-themes');
+            $this->publishes([
+                __DIR__.'/../resources/views/auth/breeze/' => $this->app->resourcePath('views/auth')
+            ], 'turbine-ui-auth-breeze');
             $this->publishes([
                 __DIR__.'/../resources/js/' => public_path('storage/vendor/turbine-ui/')
             ], 'turbine-ui-js');

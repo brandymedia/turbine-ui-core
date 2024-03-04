@@ -475,6 +475,12 @@ class Turbine
         $elementClasses = [];
         
         if ($elements) {
+            $sizeOverride = config('turbine.components.'.$component.'.size') ?? null;
+
+            if (!$size) {
+                $size = $sizeOverride ?? $size ?? null;
+            }
+
             foreach ($elements as $element) {
                 $elementName = Str::kebab($element);
                 $base = $this->theme['design']['components'][$component]['elements'][$elementName]['base'] ?? null;
