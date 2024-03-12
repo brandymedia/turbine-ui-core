@@ -98,6 +98,9 @@ class TurbineUiCoreServiceProvider extends ServiceProvider
                 __DIR__.'/../resources/views/auth/breeze/' => $this->app->resourcePath('views/auth')
             ], 'turbine-ui-auth-breeze');
             $this->publishes([
+                __DIR__.'/../resources/views/profile/' => $this->app->resourcePath('views/profile')
+            ], 'turbine-ui-profile');
+            $this->publishes([
                 __DIR__.'/../resources/js/' => public_path('storage/vendor/turbine-ui/')
             ], 'turbine-ui-js');
             $this->commands([
