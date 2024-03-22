@@ -800,11 +800,11 @@ return [
             'link' => [
                 'base' => 'inline whitespace-nowrap cursor-pointer underline',
                 'sizes' => [
-                    'xs' => 'text-xs',
-                    'sm' => 'text-sm',
-                    'base' => 'text-base',
-                    'lg' => 'text-lg',
-                    'xl' => 'text-xl',
+                    'xs' => 'text-xs md:text-sm',
+                    'sm' => 'text-sm md:text-base',
+                    'base' => 'text-base md:text-lg',
+                    'lg' => 'text-lg md:text-xl',
+                    'xl' => 'text-xl md:text-2xl',
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],

@@ -22,6 +22,9 @@
     "require": {
         "php": "^8.1.0",
         "gehrisandro/tailwind-merge-laravel": "^1.0",
-        "laravel/prompts": "^0.1"
+        "laravel/prompts": "^0.1",
+        "illuminate/support": "^10.0|^11.0",
+        "illuminate/console": "^10.0|^11.0",
+        "illuminate/view": "^10.0|^11.0"
     }
 }

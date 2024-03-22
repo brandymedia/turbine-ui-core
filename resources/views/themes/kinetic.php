@@ -813,11 +813,11 @@ return [
                     ],
                 ],
                 'sizes' => [
-                    'xs' => 'text-xs',
-                    'sm' => 'text-sm',
-                    'base' => 'text-base',
-                    'lg' => 'text-lg',
-                    'xl' => 'text-xl',
+                    'xs' => 'text-xs md:text-sm',
+                    'sm' => 'text-sm md:text-base',
+                    'base' => 'text-base md:text-lg',
+                    'lg' => 'text-lg md:text-xl',
+                    'xl' => 'text-xl md:text-2xl',
                 ],
                 'attributes' => [
                     'accent' => [false, 'border-l-8'],
@@ -1330,11 +1330,11 @@ return [
                         'xl' => 'text-xl md:text-2xl font-bold mb-1',
                     ],
                     'p' => [
-                        'xs' => 'text-xs md:text-sm mb-5 leading-relaxed md:leading-relaxed',
-                        'sm' => 'text-sm md:text-base mb-5 leading-relaxed md:leading-relaxed',
-                        'base' => 'text-base md:text-lg mb-5 leading-relaxed md:leading-relaxed',
-                        'lg' => 'text-lg md:text-xl mb-5 leading-relaxed md:leading-relaxed',
-                        'xl' => 'text-xl md:text-2xl mb-5 leading-relaxed md:leading-relaxed',
+                        'xs' => 'text-xs md:text-sm mb-5',
+                        'sm' => 'text-sm md:text-base mb-5',
+                        'base' => 'text-base md:text-lg mb-5',
+                        'lg' => 'text-lg md:text-xl mb-5',
+                        'xl' => 'text-xl md:text-2xl mb-5',
                     ],
                 ],
                 'options' => [

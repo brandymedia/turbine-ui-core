@@ -15,33 +15,6 @@ class Turbine
         $this->theme = $this->getTheme();
     }
 
-    private function extractMargin($classes)
-    {
-        $margin = '/(?<![a-zA-Z])m[xytbrl]?-\d+(?!\d)/';        
-        preg_match_all($margin, $classes, $matches);
-        $matches = collect($matches)->flatten();
-
-        return $matches;
-    }
-
-    private function extractPadding($classes)
-    {
-        $padding = '/(?<![a-zA-Z])p[xytbrl]?-\d+(?!\d)/';        
-        preg_match_all($padding, $classes, $matches);
-        $matches = collect($matches)->flatten();
-
-        return $matches;
-    }
-
-    private function extractGap($classes)
-    {
-        $gap = '/(?<![a-zA-Z])gap[xy]?-\d+(?!\d)/';        
-        preg_match_all($gap, $classes, $matches);
-        $matches = collect($matches)->flatten();
-
-        return $matches;
-    }
-
     private function linkComponent($component, $attributes, $classes)
     {
         $options = collect($this->theme['design']['components'][$component]['options'] ?? null);

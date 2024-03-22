@@ -101,7 +101,7 @@ class TurbineUiCoreServiceProvider extends ServiceProvider
                 __DIR__.'/../resources/views/profile/' => $this->app->resourcePath('views/profile')
             ], 'turbine-ui-profile');
             $this->publishes([
-                __DIR__.'/../resources/js/' => public_path('storage/vendor/turbine-ui/')
+                __DIR__.'/../resources/js/' => public_path('vendor/turbine-ui/')
             ], 'turbine-ui-js');
             $this->commands([
                 CreateVariant::class,
@@ -109,7 +109,7 @@ class TurbineUiCoreServiceProvider extends ServiceProvider
         }
 
         Blade::directive('turbineUI', function () {
-            return '<script defer src="'.asset('storage/vendor/turbine-ui/turbine-ui.js').'"></script>';
+            return '<script defer src="'.asset('vendor/turbine-ui/turbine-ui.js').'"></script>';
         });
     }
 
