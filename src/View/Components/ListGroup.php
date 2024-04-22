@@ -26,11 +26,11 @@ class ListGroup extends Component
             [
                 'accent' => $accent,
                 'border' => $border,
+                'divide' => $divide,
                 'hollow' => $hollow,
                 'ring' => $ring,
                 'rounded' => $rounded,
                 'shadow' => $shadow,
-                'divide' => $divide,
             ],
             $theme,
         );

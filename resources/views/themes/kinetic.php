@@ -1371,11 +1371,11 @@ return [
                     'textarea' => [
                         'base' => 'w-full border-0 bg-white dark:bg-slate-900 focus:border-inherit focus:ring-0',
                         'sizes' => [
-                            'xs' => 'px-2 py-1 placeholder:text-xs',
-                            'sm' => 'px-3 py-2 placeholder:text-sm',
-                            'base' => 'px-4 py-3 placeholder:text-base',
-                            'lg' => 'px-5 py-4 placeholder:text-lg',
-                            'xl' => 'px-6 py-5 placeholder:text-xl',
+                            'xs' => 'px-2 py-1 text-xs placeholder:text-xs',
+                            'sm' => 'px-3 py-2 text-sm placeholder:text-sm',
+                            'base' => 'px-4 py-3 text-base placeholder:text-base',
+                            'lg' => 'px-5 py-4 text-lg placeholder:text-lg',
+                            'xl' => 'px-6 py-5 text-xl placeholder:text-xl',
                         ],
                     ],
                     'textarea-wrapper' => [

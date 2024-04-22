@@ -29,14 +29,14 @@ class Media extends Component
             'media',
             $variant,
             [
-                'size' => $size,
                 'accent' => $accent,
                 'border' => $border,
+                'full' => $full,
                 'hollow' => $hollow,
                 'ring' => $ring,
                 'rounded' => $rounded,
                 'shadow' => $shadow,
-                'full' => $full,
+                'size' => $size,
             ],
             $theme,
         );
