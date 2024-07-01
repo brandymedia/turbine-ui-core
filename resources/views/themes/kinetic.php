@@ -407,7 +407,7 @@ return [
             ],
 
             'dropdown' => [
-                'base' => 'hidden',
+                'base' => 'hidden absolute',
                 'sizes' => [
                     'xs' => 'max-w-xs',
                     'sm' => 'max-w-sm',

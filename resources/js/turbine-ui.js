@@ -28,4 +28,24 @@
         });
     }
 
+    const dropdowns = document.querySelectorAll('.tui-dropdown');
+
+    if (dropdowns) {
+        dropdowns.forEach(dropdown => {
+            const button = dropdown.querySelector('button');
+            const content = dropdown.querySelector('.tui-dropdown-content');
+
+            button.addEventListener('click', e => {
+                e.stopPropagation();
+                content.classList.toggle('hidden');
+            });
+        });
+
+        document.addEventListener('click', e => {
+            dropdowns.forEach(dropdown => {
+                const content = dropdown.querySelector('.tui-dropdown-content');
+                content.classList.add('hidden');
+            });
+        });
+    }
 }());

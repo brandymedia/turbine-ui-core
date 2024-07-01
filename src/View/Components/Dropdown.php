@@ -16,7 +16,6 @@ class Dropdown extends Component
         public ?string $rounded = null,
         public ?string $shadow = null,
         public ?string $size = null,
-        public ?string $target = null,
         public ?string $theme = null,
         public ?string $variant = null,
     ) {
@@ -30,7 +29,6 @@ class Dropdown extends Component
                 'rounded' => $rounded,
                 'shadow' => $shadow,
                 'size' => $size,
-                'target' => $target,
             ],
             $theme,
         );
