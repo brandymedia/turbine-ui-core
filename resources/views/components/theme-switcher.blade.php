@@ -64,7 +64,6 @@
             }
             toggleTheme();
             themeSwitcher.classList.toggle('hidden');
-            themeSwitcher.classList.toggle('absolute');
         });
     });
 
