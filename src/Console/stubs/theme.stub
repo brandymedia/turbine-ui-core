@@ -1,0 +1,159 @@
+<?php
+
+return [
+    
+    'meta' => [
+        'name' => '{{ name }}',
+        'description' => 'Turbine UI {{ name }} theme',
+    ],
+
+    'design' => [
+
+        'variants' => [
+            
+            'default' => [
+                'background' => 'bg-white dark:bg-gray-900',
+                'text' => 'text-gray-800 dark:text-gray-200',
+                'border' => 'border-gray-300 dark:border-gray-700',
+                'shadow' => 'shadow-gray-300/50 dark:shadow-gray-900/50',
+                'ring' => 'ring-gray-200 dark:ring-gray-700 ring-offset-gray-100 dark:ring-offset-gray-800',
+                'hover' => 'hover:bg-gray-300 hover:dark:bg-gray-900 hover:from-gray-400 hover:to-gray-700 hover:text-gray-800/70 hover:dark:text-gray-400/70',
+                'focus' => 'focus-within:outline focus-within:outline-gray-600 dark:focus-within:outline-gray-400 focus-within:outline-2',
+                'active' => 'bg-gray-300 dark:bg-gray-900 from-gray-400 to-gray-700',
+                'gradient' => 'bg-gradient-to-br from-gray-200 to-gray-100 text-gray-800',
+                'divide' => 'divide-gray-300 dark:divide-gray-700',
+                'accent' => 'accent-gray-600 hover:accent-gray-700',
+            ],
+            
+            'primary' => [
+                'background' => 'bg-blue-500 dark:bg-blue-600',
+                'text' => 'text-white dark:text-white',
+                'border' => 'border-blue-600 dark:border-blue-500',
+                'shadow' => 'shadow-blue-500/50 dark:shadow-blue-600/50',
+                'ring' => 'ring-blue-500 dark:ring-blue-600 ring-offset-blue-100 dark:ring-offset-blue-900',
+                'hover' => 'hover:bg-blue-600 hover:dark:bg-blue-700',
+                'focus' => 'focus-within:outline focus-within:outline-blue-500 dark:focus-within:outline-blue-400 focus-within:outline-2',
+                'active' => 'bg-blue-600 dark:bg-blue-700',
+                'gradient' => 'bg-gradient-to-br from-blue-500 to-blue-600 text-white',
+                'divide' => 'divide-blue-600 dark:divide-blue-500',
+                'accent' => 'accent-blue-600 hover:accent-blue-700',
+            ],
+            
+            'secondary' => [
+                'background' => 'bg-gray-500 dark:bg-gray-600',
+                'text' => 'text-white dark:text-white',
+                'border' => 'border-gray-600 dark:border-gray-500',
+                'shadow' => 'shadow-gray-500/50 dark:shadow-gray-600/50',
+                'ring' => 'ring-gray-500 dark:ring-gray-600 ring-offset-gray-100 dark:ring-offset-gray-900',
+                'hover' => 'hover:bg-gray-600 hover:dark:bg-gray-700',
+                'focus' => 'focus-within:outline focus-within:outline-gray-500 dark:focus-within:outline-gray-400 focus-within:outline-2',
+                'active' => 'bg-gray-600 dark:bg-gray-700',
+                'gradient' => 'bg-gradient-to-br from-gray-500 to-gray-600 text-white',
+                'divide' => 'divide-gray-600 dark:divide-gray-500',
+                'accent' => 'accent-gray-600 hover:accent-gray-700',
+            ],
+        
+            'success' => [
+                'background' => 'bg-green-500 dark:bg-green-600',
+                'text' => 'text-white dark:text-white',
+                'border' => 'border-green-600 dark:border-green-500',
+                'shadow' => 'shadow-green-500/50 dark:shadow-green-600/50',
+                'ring' => 'ring-green-500 dark:ring-green-600 ring-offset-green-100 dark:ring-offset-green-900',
+                'hover' => 'hover:bg-green-600 hover:dark:bg-green-700',
+                'focus' => 'focus-within:outline focus-within:outline-green-500 dark:focus-within:outline-green-400 focus-within:outline-2',
+                'active' => 'bg-green-600 dark:bg-green-700',
+                'gradient' => 'bg-gradient-to-br from-green-500 to-green-600 text-white',
+                'divide' => 'divide-green-600 dark:divide-green-500',
+                'accent' => 'accent-green-600 hover:accent-green-700',
+            ],
+        
+            'danger' => [
+                'background' => 'bg-red-500 dark:bg-red-600',
+                'text' => 'text-white dark:text-white',
+                'border' => 'border-red-600 dark:border-red-500',
+                'shadow' => 'shadow-red-500/50 dark:shadow-red-600/50',
+                'ring' => 'ring-red-500 dark:ring-red-600 ring-offset-red-100 dark:ring-offset-red-900',
+                'hover' => 'hover:bg-red-600 hover:dark:bg-red-700',
+                'focus' => 'focus-within:outline focus-within:outline-red-500 dark:focus-within:outline-red-400 focus-within:outline-2',
+                'active' => 'bg-red-600 dark:bg-red-700',
+                'gradient' => 'bg-gradient-to-br from-red-500 to-red-600 text-white',
+                'divide' => 'divide-red-600 dark:divide-red-500',
+                'accent' => 'accent-red-600 hover:accent-red-700',
+            ],
+        
+            'warning' => [
+                'background' => 'bg-yellow-500 dark:bg-yellow-600',
+                'text' => 'text-white dark:text-white',
+                'border' => 'border-yellow-600 dark:border-yellow-500',
+                'shadow' => 'shadow-yellow-500/50 dark:shadow-yellow-600/50',
+                'ring' => 'ring-yellow-500 dark:ring-yellow-600 ring-offset-yellow-100 dark:ring-offset-yellow-900',
+                'hover' => 'hover:bg-yellow-600 hover:dark:bg-yellow-700',
+                'focus' => 'focus-within:outline focus-within:outline-yellow-500 dark:focus-within:outline-yellow-400 focus-within:outline-2',
+                'active' => 'bg-yellow-600 dark:bg-yellow-700',
+                'gradient' => 'bg-gradient-to-br from-yellow-500 to-yellow-600 text-white',
+                'divide' => 'divide-yellow-600 dark:divide-yellow-500',
+                'accent' => 'accent-yellow-600 hover:accent-yellow-700',
+            ],
+        
+            'info' => [
+                'background' => 'bg-blue-500 dark:bg-blue-600',
+                'text' => 'text-white dark:text-white',
+                'border' => 'border-blue-600 dark:border-blue-500',
+                'shadow' => 'shadow-blue-500/50 dark:shadow-blue-600/50',
+                'ring' => 'ring-blue-500 dark:ring-blue-600 ring-offset-blue-100 dark:ring-offset-blue-900',
+                'hover' => 'hover:bg-blue-600 hover:dark:bg-blue-700',
+                'focus' => 'focus-within:outline focus-within:outline-blue-500 dark:focus-within:outline-blue-400 focus-within:outline-2',
+                'active' => 'bg-blue-600 dark:bg-blue-700',
+                'gradient' => 'bg-gradient-to-br from-blue-500 to-blue-600 text-white',
+                'divide' => 'divide-blue-600 dark:divide-blue-500',
+                'accent' => 'accent-blue-600 hover:accent-blue-700',
+            ],
+        
+        ],
+
+        'components' => [
+            'button' => [
+                'base' => 'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
+                'sizes' => [
+                    'sm' => 'h-9 rounded-md px-3',
+                    'base' => 'h-10 px-4 py-2',
+                    'lg' => 'h-11 rounded-md px-8',
+                    'icon' => 'h-10 w-10',
+                ],
+                'options' => [
+                    'hover' => true,
+                    'focus' => true,
+                    'background' => true,
+                    'text' => true,
+                ],
+            ],
+            'input' => [
+                'base' => 'flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
+                'sizes' => [
+                    'sm' => 'h-9 px-3 text-sm',
+                    'base' => 'h-10 px-3 py-2 text-sm',
+                    'lg' => 'h-11 px-3 text-base',
+                ],
+                'options' => [
+                    'focus' => true,
+                    'background' => true,
+                    'text' => true,
+                ],
+            ],
+            'card' => [
+                'base' => 'rounded-lg border bg-card text-card-foreground shadow-sm',
+                'sizes' => [
+                    'sm' => 'p-4',
+                    'base' => 'p-6',
+                    'lg' => 'p-8',
+                ],
+                'options' => [
+                    'background' => true,
+                    'text' => true,
+                ],
+            ],
+        ],
+        
+    ],
+
+];

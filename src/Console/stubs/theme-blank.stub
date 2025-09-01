@@ -1,0 +1,1494 @@
+<?php
+
+return [
+    
+    'meta' => [
+        'name' => '{{ name }}',
+        'description' => 'Turbine UI {{ name }} theme (blank template)',
+    ],
+
+    'design' => [
+
+        'variants' => [
+            
+            'default' => [
+                'background' => '',
+                'text' => '',
+                'border' => '',
+                'shadow' => '',
+                'ring' => '',
+                'hover' => '',
+                'focus' => '',
+                'active' => '',
+                'gradient' => '',
+                'divide' => '',
+                'accent' => '',
+            ],
+            
+            'dark' => [
+                'background' => '',
+                'text' => '',
+                'border' => '',
+                'shadow' => '',
+                'ring' => '',
+                'hover' => '',
+                'focus' => '',
+                'active' => '',
+                'gradient' => '',
+                'divide' => '',
+                'accent' => '',
+            ],
+
+            'light' => [
+                'background' => '',
+                'text' => '',
+                'border' => '',
+                'shadow' => '',
+                'ring' => '',
+                'hover' => '',
+                'focus' => '',
+                'active' => '',
+                'gradient' => '',
+                'divide' => '',
+                'accent' => '',
+            ],
+            
+            'brand' => [
+                'background' => '',
+                'text' => '',
+                'border' => '',
+                'shadow' => '',
+                'ring' => '',
+                'hover' => '',
+                'focus' => '',
+                'active' => '',
+                'gradient' => '',
+                'divide' => '',
+                'accent' => '',
+            ],
+            
+            'primary' => [
+                'background' => '',
+                'text' => '',
+                'border' => '',
+                'shadow' => '',
+                'ring' => '',
+                'hover' => '',
+                'focus' => '',
+                'active' => '',
+                'gradient' => '',
+                'divide' => '',
+                'accent' => '',
+            ],
+            
+            'secondary' => [
+                'background' => '',
+                'text' => '',
+                'border' => '',
+                'shadow' => '',
+                'ring' => '',
+                'hover' => '',
+                'focus' => '',
+                'active' => '',
+                'gradient' => '',
+                'divide' => '',
+                'accent' => '',
+            ],
+        
+            'success' => [
+                'background' => '',
+                'text' => '',
+                'border' => '',
+                'shadow' => '',
+                'ring' => '',
+                'hover' => '',
+                'focus' => '',
+                'active' => '',
+                'gradient' => '',
+                'divide' => '',
+                'accent' => '',
+            ],
+        
+            'warning' => [
+                'background' => '',
+                'text' => '',
+                'border' => '',
+                'shadow' => '',
+                'ring' => '',
+                'hover' => '',
+                'focus' => '',
+                'active' => '',
+                'gradient' => '',
+                'divide' => '',
+                'accent' => '',
+            ],
+        
+            'danger' => [
+                'background' => '',
+                'text' => '',
+                'border' => '',
+                'shadow' => '',
+                'ring' => '',
+                'hover' => '',
+                'focus' => '',
+                'active' => '',
+                'gradient' => '',
+                'divide' => '',
+                'accent' => '',
+            ],
+        
+        ],
+
+        'components' => [
+
+            'alert' => [
+                'base' => '',
+                'elements' => [
+                    'content' => [
+                        'base' => '',
+                    ],
+                    'title' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'dismiss-icon' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                ],
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => '',
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                ],
+            ],
+
+            'avatar' => [
+                'base' => '',
+                'elements' => [
+                    'label' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                ],
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => '',
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                ],
+            ],
+
+            'badge' => [
+                'base' => '',
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => '',
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                ],
+            ],
+
+            'burger' => [
+                'base' => '',
+                'elements' => [
+                    'bar' => [
+                        'base' => '',
+                    ],
+                ],
+                'options' => [
+                    'safe' => ''
+                ],
+            ],
+
+            'button' => [
+                'base' => '',
+                'elements' => [
+                    'content' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'prefix' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'suffix' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                ],
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'animate' => [false, ''],
+                    'border' => '',
+                    'divide' => [false, ''],
+                    'full' => [false, ''],
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                ],
+                'options' => [
+                    'gradient' => false,
+                    'hover' => true,
+                ],
+            ],
+
+            'button-group' => [
+                'base' => '',
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => '',
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                    'divide' => [false, ''],
+                ],
+            ],
+
+            'card' => [
+                'base' => '',
+                'elements' => [
+                    'header' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'body' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'footer' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => '',
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                    'divide' => [false, ''],
+                ],
+            ],
+
+            'code' => [
+                'base' => '',
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => '',
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                ],
+            ],
+
+            'container' => [
+                'base' => '',
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                    'full' => '',
+                ],
+                'grids' => [
+                    '1' => '',
+                    '2' => '',
+                    '3' => '',
+                    '4' => '',
+                    '5' => '',
+                    '6' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => '',
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                    'divide' => [false, ''],
+                ],
+                'options' => [
+                    'background' => true,
+                ],
+            ],
+
+            'dropdown' => [
+                'base' => '',
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                    'full' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => '',
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                ],
+            ],
+
+            'faq' => [
+                'base' => '',
+                'elements' => [
+                    'answer' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'expand-icon' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'question' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                ],
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => '',
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                ],
+            ],
+
+            'grid' => [
+                'base' => '',
+                'cols' => [
+                    '1' => '',
+                    '2' => '',
+                    '3' => '',
+                    '4' => '',
+                    '5' => '',
+                    '6' => '',
+                    '7' => '',
+                    '8' => '',
+                    '9' => '',
+                    '10' => '',
+                    '11' => '',
+                    '12' => '',
+                ],
+                'gap' => [
+                    'px' => '',
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'options' => [
+                    'background' => false,
+                    'text' => false,
+                    'border' => false,
+                    'shadow' => false,
+                    'ring' => false,
+                    'hover' => false,
+                    'focus' => false,
+                    'gradient' => false,
+                    'divide' => false,
+                ],
+            ],
+
+            'heading' => [
+                'base' => '',
+                'sizes' => [
+                    'h1' => [
+                        'xs' => '',
+                        'sm' => '',
+                        'base' => '',
+                        'lg' => '',
+                        'xl' => '',
+                    ],
+                    'h2' => [
+                        'xs' => '',
+                        'sm' => '',
+                        'base' => '',
+                        'lg' => '',
+                        'xl' => '',
+                    ],
+                    'h3' => [
+                        'xs' => '',
+                        'sm' => '',
+                        'base' => '',
+                        'lg' => '',
+                        'xl' => '',
+                    ],
+                    'h4' => [
+                        'xs' => '',
+                        'sm' => '',
+                        'base' => '',
+                        'lg' => '',
+                        'xl' => '',
+                    ],
+                    'h5' => [
+                        'xs' => '',
+                        'sm' => '',
+                        'base' => '',
+                        'lg' => '',
+                        'xl' => '',
+                    ],
+                    'h6' => [
+                        'xs' => '',
+                        'sm' => '',
+                        'base' => '',
+                        'lg' => '',
+                        'xl' => '',
+                    ],
+                ],
+                'options' => [
+                    'background' => false,
+                ],
+            ],
+
+            'input' => [
+                'base' => '',
+                'elements' => [
+                    'hint' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'input' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'input-checkbox' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'input-checkbox-wrapper' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'input-checkbox-label' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'input-radio' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'input-radio-wrapper' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'input-radio-label' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'input-range' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'input-range-wrapper' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'input-range-label' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'label' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'prefix' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'suffix' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                ],
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => '',
+                    'full' => [false, ''],
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                    'divide' => [false, ''],
+                ],
+                'options' => [
+                    'background' => true,
+                    'focus' => true,
+                ],
+            ],
+
+            'input-group' => [
+                'base' => '',
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'cols' => [
+                    'auto' => '',
+                    '1' => '',
+                    '2' => '',
+                    '3' => '',
+                    '4' => '',
+                    '5' => '',
+                    '6' => '',
+                    '7' => '',
+                    '8' => '',
+                    '9' => '',
+                    '10' => '',
+                    '11' => '',
+                    '12' => '',
+                ],
+                'gap' => [
+                    'px' => '',
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => '',
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                    'divide' => [false, ''],
+                    'full' => [false, ''],
+                ],
+                'options' => [
+                    'gradient' => false,
+                ],
+            ],
+
+            'label' => [
+                'base' => '',
+                'elements' => [
+                    'content' => [
+                        'base' => '',
+                    ],
+                    'hint' => [
+                        'base' => '',
+                    ],
+                ],
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => [false, ''],
+                    'ring' => [false, ''],
+                    'rounded' => [false, ''],
+                    'shadow' => [false, ''],
+                    'divide' => [false, ''],
+                ],
+                'options' => [
+                    'background' => false,
+                ],
+            ],
+
+            'link' => [
+                'base' => '',
+                'elements' => [
+                    'content' => [
+                        'base' => '',
+                    ],
+                ],
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => [false, ''],
+                    'ring' => [false, ''],
+                    'rounded' => [false, ''],
+                    'shadow' => [false, ''],
+                    'divide' => [false, ''],
+                ],
+                'options' => [
+                    'background' => false,
+                    'gradient' => false,
+                    'hover' => true,
+                ],
+            ],
+
+            'list-group' => [
+                'base' => '',
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => '',
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                    'divide' => [false, ''],
+                ],
+            ],
+
+            'media' => [
+                'base' => '',
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => '',
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                    'full' => '',
+                ],
+            ],
+
+            'menu' => [
+                'base' => '',
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                    'full' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => [false, ''],
+                    'ring' => [false, ''],
+                    'rounded' => [false, ''],
+                    'shadow' => [false, ''],
+                    'divide' => [false, ''],
+                ],
+            ],
+
+            'modal' => [
+                'base' => '',
+                'elements' => [
+                    'backdrop' => [
+                        'base' => '',
+                    ],
+                    'content' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                            'full' => '',
+                        ],
+                    ],
+                    'dismiss-button' => [
+                        'base' => '',
+                    ],
+                    'dismiss-icon' => [
+                        'base' => '',
+                    ],
+                ],
+            ],
+
+            'navbar' => [
+                'base' => '',
+                'elements' => [
+                    'brand' => [
+                        'base' => '',
+                    ],
+                    'content' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                            'full' => '',
+                        ],
+                    ],
+                ],
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                    'full' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => [false, ''],
+                    'ring' => [false, ''],
+                    'rounded' => [false, ''],
+                    'shadow' => [false, ''],
+                    'divide' => [false, ''],
+                ],
+            ],
+
+            'nav-link' => [
+                'base' => '',
+                'elements' => [
+                    'content' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'prefix' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'suffix' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                ],
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'animate' => [false, ''],
+                    'border' => [false, ''],
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                    'divide' => [false, ''],
+                ],
+                'options' => [
+                    'gradient' => false,
+                    'hover' => true,
+                ],
+            ],
+
+            'progress' => [
+                'base' => '',
+                'elements' => [
+                    'bar' => [
+                        'base' => '',
+                    ],
+                    'label' => [
+                        'base' => '',
+                    ],
+                    'percentage' => [
+                        'base' => '',
+                    ],
+                    'progress-wrapper' => [
+                        'base' => '',
+                    ],
+                    'text-wrapper' => [
+                        'base' => '',
+                    ],
+                ],
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => [false, ''],
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                ],
+                'options' => [
+                    'gradient' => false,
+                ],
+            ],
+
+            'section' => [
+                'base' => '',
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                    'full' => '',
+                ],
+                'attributes' => [
+                    'full' => [false, ''],
+                ],
+                'options' => [
+                    'gradient' => false,
+                    'text' => false,
+                    'background' => false,
+                ],
+            ],
+
+            'select' => [
+                'base' => '',
+                'elements' => [
+                    'hint' => [
+                        'base' => '',
+                    ],
+                    'prefix' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'select' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'suffix' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                ],
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => '',
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                    'divide' => [false, ''],
+                ],
+                'options' => [
+                    'background' => true,
+                    'focus' => true,
+                ],
+            ],
+
+            'sidebar' => [
+                'base' => '',
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                    'half' => '',
+                    'full' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => [false, ''],
+                    'ring' => [false, ''],
+                    'rounded' => [false, ''],
+                    'shadow' => [false, ''],
+                ],
+            ],
+
+            'stat' => [
+                'base' => '',
+                'elements' => [
+                    'description' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'icon' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'title' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'value' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                ],
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => '',
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                    'divide' => [false, ''],
+                ],
+            ],
+
+            'table' => [
+                'base' => '',
+                'elements' => [
+                    'tbody' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'tfoot' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'thead' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                ],
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => [false, ''],
+                    'ring' => [false, ''],
+                    'rounded' => [false, ''],
+                    'shadow' => [false, ''],
+                    'divide' => [false, ''],
+                    'striped' => [false, ''],
+                ],
+            ],
+
+            'text' => [
+                'base' => '',
+                'sizes' => [
+                    'h1' => [
+                        'xs' => '',
+                        'sm' => '',
+                        'base' => '',
+                        'lg' => '',
+                        'xl' => '',
+                    ],
+                    'h2' => [
+                        'xs' => '',
+                        'sm' => '',
+                        'base' => '',
+                        'lg' => '',
+                        'xl' => '',
+                    ],
+                    'h3' => [
+                        'xs' => '',
+                        'sm' => '',
+                        'base' => '',
+                        'lg' => '',
+                        'xl' => '',
+                    ],
+                    'h4' => [
+                        'xs' => '',
+                        'sm' => '',
+                        'base' => '',
+                        'lg' => '',
+                        'xl' => '',
+                    ],
+                    'h5' => [
+                        'xs' => '',
+                        'sm' => '',
+                        'base' => '',
+                        'lg' => '',
+                        'xl' => '',
+                    ],
+                    'h6' => [
+                        'xs' => '',
+                        'sm' => '',
+                        'base' => '',
+                        'lg' => '',
+                        'xl' => '',
+                    ],
+                    'p' => [
+                        'xs' => '',
+                        'sm' => '',
+                        'base' => '',
+                        'lg' => '',
+                        'xl' => '',
+                    ],
+                ],
+                'options' => [
+                    'background' => false,
+                ],
+            ],
+
+            'textarea' => [
+                'base' => '',
+                'elements' => [
+                    'footer' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'header' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'label' => [
+                        'base' => '',
+                    ],
+                    'textarea' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'textarea-wrapper' => [
+                        'base' => '',
+                    ],
+                ],
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => '',
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                    'divide' => [false, ''],
+                ],
+                'options' => [
+                    'focus' => true,
+                ],
+            ],
+
+            'theme-switcher' => [
+                'base' => '',
+                'elements' => [
+                    'list-group' => [
+                        'base' => '',
+                    ],
+                    'light-button' => [
+                        'base' => '',
+                    ],
+                    'dark-button' => [
+                        'base' => '',
+                    ],
+                    'switch-button' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'system-button' => [
+                        'base' => '',
+                    ],
+                ],
+            ],
+
+            'toast' => [
+                'base' => '',
+                'elements' => [
+                    'content' => [
+                        'base' => '',
+                    ],
+                    'dismiss-icon' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'title' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                    'toast' => [
+                        'base' => '',
+                        'sizes' => [
+                            'xs' => '',
+                            'sm' => '',
+                            'base' => '',
+                            'lg' => '',
+                            'xl' => '',
+                        ],
+                    ],
+                ],
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'attributes' => [
+                    'accent' => [false, ''],
+                    'border' => '',
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                ],
+                'options' => [
+                    'gradient' => false,
+                    'hover' => false,
+                ],
+            ],
+
+            'toggle' => [
+                'base' => '',
+                'elements' => [
+                    'input' => [
+                        'base' => '',
+                    ],
+                    'label' => [
+                        'base' => '',
+                    ],
+                ],
+                'sizes' => [
+                    'xs' => '',
+                    'sm' => '',
+                    'base' => '',
+                    'lg' => '',
+                    'xl' => '',
+                ],
+                'attributes' => [
+                    'border' => [false, ''],
+                    'ring' => [false, ''],
+                    'rounded' => '',
+                    'shadow' => [false, ''],
+                ],
+            ],
+
+        ],
+        
+    ],
+
+];

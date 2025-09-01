@@ -39,6 +39,10 @@ use Brandymedia\TurbineUiCore\View\Components\ThemeSwitcher;
 use Brandymedia\TurbineUiCore\View\Components\Toast;
 use Brandymedia\TurbineUiCore\View\Components\Toggle;
 use Brandymedia\TurbineUiCore\Console\CreateVariant;
+use Brandymedia\TurbineUiCore\Console\CreateTheme;
+use Brandymedia\TurbineUiCore\Theme\ThemeManager;
+use Brandymedia\TurbineUiCore\Components\ComponentClassBuilder;
+use Brandymedia\TurbineUiCore\Variants\VariantResolver;
 
 class TurbineUiCoreServiceProvider extends ServiceProvider
 {
@@ -105,6 +109,7 @@ class TurbineUiCoreServiceProvider extends ServiceProvider
             ], 'turbine-ui-js');
             $this->commands([
                 CreateVariant::class,
+                CreateTheme::class,
             ]);
         }
 
@@ -113,8 +118,12 @@ class TurbineUiCoreServiceProvider extends ServiceProvider
         });
     }
 
-    public function register()
+    public function register(): void
     {
+        $this->app->singleton(ThemeManager::class);
         
+        $this->app->bind(Turbine::class, function ($app) {
+            return new Turbine($app->make(ThemeManager::class));
+        });
     }
 }
