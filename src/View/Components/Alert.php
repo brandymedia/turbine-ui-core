@@ -21,6 +21,7 @@ class Alert extends Component
         public ?string $size = null,
         public ?string $theme = null,
         public ?string $title = null,
+        public ?int $titleLevel = 2,
         public ?string $variant = null,
         public ?string $contentClasses = null,
         public ?string $dismissButtonClasses = null,

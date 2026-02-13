@@ -1,10 +1,11 @@
 <div {{ $attributes->twMerge(['class' => $classes]) }}>
+    @php($headingTag = 'h' . max(1, min(6, (int) ($titleLevel ?? 2))))
     @isset($icon)
         {!! $icon !!}
     @endisset
     <div {{ $attributes->twMergeFor('content', $contentClasses) }}>
         @isset($title)
-            <h3 {{ $attributes->twMergeFor('title', $titleClasses) }}>{{ $title }}</h3>
+            <{{ $headingTag }} {{ $attributes->twMergeFor('title', $titleClasses) }}>{{ $title }}</{{ $headingTag }}>
         @endisset
         @if($slot->isNotEmpty())
             <span>{{ $slot }}</span>

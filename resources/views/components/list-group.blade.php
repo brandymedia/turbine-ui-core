@@ -1,3 +1,3 @@
-<ul {{ $attributes->twMerge(['class' => $classes]) }}>
+<div role="group" {{ $attributes->twMerge(['class' => $classes]) }}>
     {{ $slot }}
-</ul>
+</div>
