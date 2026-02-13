@@ -2,6 +2,29 @@
 
 Turbine UI is a Laravel Blade & Tailwind CSS UI component library that helps you build elegant and responsive user interfaces that'll make your pages pop. Say goodbye to designer's block forever.
 
+# Release Notes
+
+## v2.1.1
+
+### Added
+- `x-t-alert` now supports a `titleLevel` prop to control semantic heading level (`1-6`).
+
+### Fixed
+- Turbine UI script directive now uses a host-relative path for improved environment compatibility.
+- Accessibility improvements for interactive controls:
+  - Added explicit accessible labels and button types for dismiss controls in alert, toast, modal, and sidebar.
+  - Added an accessible name/title for the theme switcher trigger button.
+- Improved list-group semantics for better accessibility in common usage patterns.
+
+### Upgrade steps
+
+After upgrading, republish JS assets and clear caches:
+
+```
+php artisan vendor:publish --tag=turbine-ui-js --force
+php artisan optimize:clear
+```
+
 # Documentation
 
 ## Download
@@ -125,13 +148,29 @@ You can now use your new variant on your components using kebab-case formatting.
 You'll need to first publish the js files:
 
 ```
-php artisan vendor:publish --tag=turbine-ui-js
+php artisan vendor:publish --tag=turbine-ui-js --force
 ```
 
 Then add the Turbine UI blade directive to your head:
 
 ```
 @turbineUI
+```
+
+If you update Turbine UI and interactive components appear stale, clear cached files:
+
+```
+php artisan optimize:clear
+```
+
+### Alert title heading level
+
+You can control alert title heading semantics with `titleLevel`:
+
+```
+<x-t-alert title="Important update" titleLevel="2" variant="brand">
+    This alert keeps heading hierarchy consistent with your page structure.
+</x-t-alert>
 ```
 
 ### Components
