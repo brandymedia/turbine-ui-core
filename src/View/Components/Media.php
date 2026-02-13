@@ -12,7 +12,7 @@ class Media extends Component
         public ?string $accent = null,
         public ?string $border = null,
         public ?string $classes = null,
-        public ?string $full = null,
+        public bool|string|null $full = null,
         public ?string $hollow = null,
         public ?string $ring = null,
         public ?string $rounded = null,

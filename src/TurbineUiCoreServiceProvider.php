@@ -114,7 +114,9 @@ class TurbineUiCoreServiceProvider extends ServiceProvider
         }
 
         Blade::directive('turbineUI', function () {
-            return '<script defer src="'.asset('vendor/turbine-ui/turbine-ui.js').'"></script>';
+            // Use a host-relative path so JS loads correctly across local domains,
+            // tunnels, and Playwright base URLs.
+            return '<script defer src="/vendor/turbine-ui/turbine-ui.js"></script>';
         });
     }
 

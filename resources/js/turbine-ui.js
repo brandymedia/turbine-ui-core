@@ -11,41 +11,48 @@
         })
     });
 
-    const burger = document.querySelector('.tui-burger');
-    const menu = document.querySelector('.tui-menu');
-    const bars = document.querySelectorAll('.tui-bar');
+    const burgers = document.querySelectorAll('.tui-burger');
 
-    if (burger) {
-        burger.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-            bars[0].classList.toggle('transform');
-            bars[0].classList.toggle('translate-y-1.5'); 
-            bars[0].classList.toggle('-rotate-45');
-            bars[1].classList.toggle('hidden');
-            bars[2].classList.toggle('transform');
-            bars[2].classList.toggle('-translate-y-1');        
-            bars[2].classList.toggle('rotate-45');
+    if (burgers.length) {
+        burgers.forEach(burger => {
+            const nav = burger.closest('nav') ?? burger.parentElement;
+            const menu = nav ? nav.querySelector('.tui-menu') : null;
+            const bars = burger.querySelectorAll('.tui-bar');
+
+            if (!menu || bars.length < 3) {
+                return;
+            }
+
+            burger.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                bars[0].classList.toggle('transform');
+                bars[0].classList.toggle('translate-y-1.5');
+                bars[0].classList.toggle('-rotate-45');
+                bars[1].classList.toggle('hidden');
+                bars[2].classList.toggle('transform');
+                bars[2].classList.toggle('-translate-y-1');
+                bars[2].classList.toggle('rotate-45');
+            });
         });
     }
 
-    const dropdowns = document.querySelectorAll('.tui-dropdown');
+    document.addEventListener('click', e => {
+        const button = e.target.closest('.tui-dropdown button');
 
-    if (dropdowns) {
-        dropdowns.forEach(dropdown => {
-            const button = dropdown.querySelector('button');
-            const content = dropdown.querySelector('.tui-dropdown-content');
+        if (button) {
+            e.stopPropagation();
+            const dropdown = button.closest('.tui-dropdown');
+            const content = dropdown ? dropdown.querySelector('.tui-dropdown-content') : null;
 
-            button.addEventListener('click', e => {
-                e.stopPropagation();
+            if (content) {
                 content.classList.toggle('hidden');
-            });
-        });
+            }
 
-        document.addEventListener('click', e => {
-            dropdowns.forEach(dropdown => {
-                const content = dropdown.querySelector('.tui-dropdown-content');
-                content.classList.add('hidden');
-            });
+            return;
+        }
+
+        document.querySelectorAll('.tui-dropdown .tui-dropdown-content').forEach(content => {
+            content.classList.add('hidden');
         });
-    }
+    });
 }());

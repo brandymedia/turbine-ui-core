@@ -159,13 +159,18 @@ class VariantResolver
         if ($attributeCollection->isNotEmpty()) {
             foreach ($attributeCollection as $key => $componentLocalAttribute) {
                 
-                if ($componentLocalAttribute === '1') {
+                if (
+                    $componentLocalAttribute === '1'
+                    || $componentLocalAttribute === 1
+                    || $componentLocalAttribute === true
+                    || $componentLocalAttribute === 'true'
+                ) {
                     $enabledAttributes->push($key);
                 }
 
                 $componentGlobalAttribute = $this->theme['design']['components'][$component]['attributes'][$key] ?? null;
 
-                if ($componentGlobalAttribute && $componentLocalAttribute !== "false") {
+                if ($componentGlobalAttribute && ! $this->isExplicitlyFalse($componentLocalAttribute)) {
                     if (!is_array($componentGlobalAttribute) || !($componentGlobalAttribute[0] === false)) {
                         if (!$enabledAttributes->contains($key)) {
                             $enabledAttributes->push($key); 
@@ -176,6 +181,14 @@ class VariantResolver
         }
 
         return $enabledAttributes->reverse();
+    }
+
+    private function isExplicitlyFalse(mixed $value): bool
+    {
+        return $value === false
+            || $value === 'false'
+            || $value === 0
+            || $value === '0';
     }
 
     private function getLocalVariant(?string $variant): ?array

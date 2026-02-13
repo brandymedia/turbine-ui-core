@@ -14,7 +14,7 @@ class Input extends Component
         public ?string $border = null,
         public ?string $classes = null,
         public ?string $divide = null,
-        public ?string $full = null,
+        public bool|string|null $full = null,
         public ?string $hint = null,
         public ?string $hollow = null,
         public ?string $label = null,
