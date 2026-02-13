@@ -4,7 +4,14 @@
     $systemIcon = config('turbine.components.theme-switcher.icons.system') ?? "<svg class='w-5 h-5 fill-current' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' data-slot='icon'><path fill-rule='evenodd' d='M2.25 5.25a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3V15a3 3 0 0 1-3 3h-3v.257c0 .597.237 1.17.659 1.591l.621.622a.75.75 0 0 1-.53 1.28h-9a.75.75 0 0 1-.53-1.28l.621-.622a2.25 2.25 0 0 0 .659-1.59V18h-3a3 3 0 0 1-3-3V5.25Zm1.5 0v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5Z' clip-rule='evenodd' /></svg>";
 @endphp
 <x-t-dropdown variant="{{ $variant }}" size="{{ $size }}" target="theme" {{ $attributes->twMerge('tui-theme-switcher ' . $classes) }}>
-    <x-t-button variant="{{ $variant }}" size="{{ $size }}" {{ $attributes->twMergeFor('switch-button', 'tui-theme-switcher-button '.$switchButtonClasses) }}></x-t-button>
+    <x-t-button
+        type="button"
+        aria-label="{{ __('Switch theme') }}"
+        title="{{ __('Switch theme') }}"
+        variant="{{ $variant }}"
+        size="{{ $size }}"
+        {{ $attributes->twMergeFor('switch-button', 'tui-theme-switcher-button '.$switchButtonClasses) }}
+    ></x-t-button>
     <x-slot:content>
         <x-t-list-group variant="{{ $variant }}" size="{{ $size }}" {{ $attributes->twMergeFor('list-group', $listGroupClasses) }}>
             @if (config('turbine.components.theme-switcher.options.light') !== false)
